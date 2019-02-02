@@ -1,0 +1,15 @@
+{% extends "main.html" %}
+
+{% block content %}
+  <table border="1">
+    	<tbody>
+    		{% for song in result %}
+    			<tr>
+    				<td>{{ song.get('title') }}</td>
+    				<td>{{ song.get('id') }}</td>
+    				<td>{{ song.get('albums') }}</td>
+    			</tr>
+    		{% endfor %}
+    	</tbody>
+    </table>
+{% endblock %}

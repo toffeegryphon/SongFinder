@@ -1,0 +1,1 @@
+start virtual environment by cd ~\Scripts and running activate
