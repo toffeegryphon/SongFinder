@@ -1,0 +1,510 @@
+{
+    "artistId": "012151a8-0f9a-44c9-997f-ebd68b5389f9",
+    "artistName": "imagine dragons",
+    "recording-count": 100,
+    "recordings": [
+        {
+            "title": "30 Lives",
+            "id": "16a7e090-bc0b-4f85-9e78-d346f946e53a",
+            "albums": null
+        },
+        {
+            "title": "All Eyes",
+            "id": "241c217d-e1cd-44d1-a929-5e765718550e",
+            "albums": null
+        },
+        {
+            "id": "fcff6799-9d72-4303-ad51-c359d68a7c57",
+            "title": "America",
+            "albums": null
+        },
+        {
+            "title": "Amsterdam",
+            "id": "2b50d4ec-9af7-49a4-8ad1-a5bbcd0b7437",
+            "albums": null
+        },
+        {
+            "id": "032fe649-9177-48b0-9e14-08789a06bbc8",
+            "title": "Bad Liar",
+            "albums": null
+        },
+        {
+            "title": "Battle Cry",
+            "id": "1c0ef075-d5ab-4591-8600-f7dce404064f",
+            "albums": null
+        },
+        {
+            "id": "839a1658-53f7-4b2a-86d9-3e52d929d5a2",
+            "title": "Believer",
+            "albums": null
+        },
+        {
+            "id": "19fd2472-8fc1-4e8f-a614-0786259102a6",
+            "title": "Birds",
+            "albums": null
+        },
+        {
+            "title": "Blank Space / Stand By Me",
+            "id": "d88ad7ef-9ed7-4a16-91a7-c83432e5df00",
+            "albums": null
+        },
+        {
+            "id": "4eb1b584-80be-493e-953e-a0c65c120b34",
+            "title": "Bleeding Out",
+            "albums": null
+        },
+        {
+            "title": "Boomerang",
+            "id": "9565f6e4-851a-46a1-8411-aa8ecdd08846",
+            "albums": null
+        },
+        {
+            "title": "Boots",
+            "id": "815dfc49-e713-43e8-ad98-1b87e0835a72",
+            "albums": null
+        },
+        {
+            "id": "2b423d67-be82-47a9-8f2c-bd931e8d0d36",
+            "title": "Born to Be Yours",
+            "albums": null
+        },
+        {
+            "title": "Bullet in a Gun",
+            "id": "addfdc0b-3b36-48dc-8711-92f0f6afed75",
+            "albums": null
+        },
+        {
+            "id": "9af29e71-e348-46ec-9390-a47f2fc5242b",
+            "title": "Burn Out",
+            "albums": null
+        },
+        {
+            "id": "93d4ded1-dd0a-4f95-b7af-f7d650011b46",
+            "title": "Cha-Ching",
+            "albums": null
+        },
+        {
+            "title": "Cha\u2010Ching",
+            "id": "54adc6e3-5d7f-4808-bdb6-ab7f3bf154ca",
+            "albums": null
+        },
+        {
+            "id": "9c825b7d-138e-4928-b061-ea55db1f9b7b",
+            "title": "Cool Out",
+            "albums": null
+        },
+        {
+            "title": "Cover Up",
+            "id": "459c91ca-35ab-46fb-bf61-ab3c3256514d",
+            "albums": null
+        },
+        {
+            "id": "b840022c-e53b-4085-8de7-66f9f2eb1c0b",
+            "title": "Curse",
+            "albums": null
+        },
+        {
+            "title": "Dancing in the Dark",
+            "id": "beb3b5dd-fe9e-4c3e-a343-c7ea0df3f045",
+            "albums": null
+        },
+        {
+            "id": "87dede50-097f-4064-9a9b-bd4851363971",
+            "title": "Demons",
+            "albums": null
+        },
+        {
+            "title": "Destination",
+            "id": "47bd0953-f604-4eb5-887f-826a08c70d1c",
+            "albums": null
+        },
+        {
+            "id": "5d6d204e-98fa-4512-9d0c-c74e6c6c3730",
+            "title": "Digital",
+            "albums": null
+        },
+        {
+            "id": "e2af27ee-27f5-452a-8eb5-2a108ee4522b",
+            "title": "Dream",
+            "albums": null
+        },
+        {
+            "title": "Drive",
+            "id": "b1f72137-14ac-4cde-83d3-0438b9008afe",
+            "albums": null
+        },
+        {
+            "id": "b1bd9d3a-911b-437d-84e6-bcef80b539f4",
+            "title": "Emma",
+            "albums": null
+        },
+        {
+            "title": "Every Night",
+            "id": "0465514b-5208-4bce-9cb5-7e30f3611d4c",
+            "albums": null
+        },
+        {
+            "title": "Fallen",
+            "id": "9d563e25-1446-41d1-b58b-b47179a3e279",
+            "albums": null
+        },
+        {
+            "title": "Fear",
+            "id": "ff06df6a-1838-455a-9af8-fde10e6b7f34",
+            "albums": null
+        },
+        {
+            "title": "Forever Young / Smoke and Mirrors",
+            "id": "d67da1ad-d3ae-41a5-8c2d-f629d68801d8",
+            "albums": null
+        },
+        {
+            "title": "Friction",
+            "id": "0b882405-823d-49af-9e54-e9c8a1375439",
+            "albums": null
+        },
+        {
+            "title": "Gold",
+            "id": "0be2b1cc-19ea-412b-89ba-1dc5f0f6bf0f",
+            "albums": null
+        },
+        {
+            "title": "Hand in My Pocket",
+            "id": "1339a155-041e-4065-9747-b1a59872db68",
+            "albums": null
+        },
+        {
+            "id": "5cbd45d8-63ea-422b-81a2-314c708198e7",
+            "title": "Hear Me",
+            "albums": null
+        },
+        {
+            "title": "Hopeless Opus",
+            "id": "2a2bfc19-7df6-4758-a1ca-7c860ef8e7ea",
+            "albums": null
+        },
+        {
+            "title": "I Bet My Life",
+            "id": "0ef2cc9a-1758-4efd-854a-e8a4d14e9753",
+            "albums": null
+        },
+        {
+            "title": "I Don't Know Why",
+            "id": "57ff93f1-6d8e-47dc-b9ea-51921a17955e",
+            "albums": null
+        },
+        {
+            "title": "I Don't Mind",
+            "id": "6ce588c1-f43e-4100-a93c-9d3930215f70",
+            "albums": null
+        },
+        {
+            "title": "I Need a Minute",
+            "id": "81272250-1517-4486-a9ae-5cb2b425eed1",
+            "albums": null
+        },
+        {
+            "id": "ffb66b8b-54d6-4877-8069-7fd5b2f8698f",
+            "title": "I Was Me",
+            "albums": null
+        },
+        {
+            "id": "cf3486c5-f852-4bf5-a9b4-dbfa38b0eccf",
+            "title": "I'm So Sorry",
+            "albums": null
+        },
+        {
+            "id": "597ad10c-06ee-4e75-9f79-087cad775b4d",
+            "title": "Intro",
+            "albums": null
+        },
+        {
+            "title": "It Comes Back to You",
+            "id": "274cbae3-2860-4be6-a4c2-6a3851a69182",
+            "albums": null
+        },
+        {
+            "id": "b497fc2e-efba-4974-99ac-6d6681e3b7d1",
+            "title": "It's Time",
+            "albums": null
+        },
+        {
+            "title": "I'll Make It Up to You",
+            "id": "24266234-d128-4ca0-8a1a-c61f92c447c1",
+            "albums": null
+        },
+        {
+            "id": "86f7376b-fbd9-4787-8b16-63981c554330",
+            "title": "Leave Me",
+            "albums": null
+        },
+        {
+            "id": "cda33013-9d08-4227-a3f1-2281e04313d1",
+            "title": "Levitate",
+            "albums": null
+        },
+        {
+            "title": "Living Musical",
+            "id": "cd719c78-14f4-413b-8cee-7aad877ae989",
+            "albums": null
+        },
+        {
+            "id": "21922813-3146-4ebc-98d7-dd7d4e349deb",
+            "title": "Look How Far We've Come",
+            "albums": null
+        },
+        {
+            "title": "Lost Cause",
+            "id": "8c5e5e5d-055a-40ea-9b03-424918748897",
+            "albums": null
+        },
+        {
+            "title": "Love",
+            "id": "c5213fce-009d-49f7-86fe-07267f374caf",
+            "albums": null
+        },
+        {
+            "title": "Machine",
+            "id": "67e56f33-5bbb-4cb1-8d73-e8eb23b9fcce",
+            "albums": null
+        },
+        {
+            "title": "Monster",
+            "id": "b993af11-6b61-4e9a-9c3b-d5835c9cadc5",
+            "albums": null
+        },
+        {
+            "id": "9b288d1d-fc19-4565-b452-25afbff7610b",
+            "title": "Mouth of the River",
+            "albums": null
+        },
+        {
+            "title": "My Fault",
+            "id": "078bb30b-5209-4523-8217-249726764717",
+            "albums": null
+        },
+        {
+            "id": "0c27405a-f1ae-4fb1-8841-1759cb9f1c93",
+            "title": "Natural",
+            "albums": null
+        },
+        {
+            "title": "Next To Me",
+            "id": "3a2c8e65-065a-4c02-bfc3-944dffc856eb",
+            "albums": null
+        },
+        {
+            "title": "Not Today",
+            "id": "4c641e14-9f29-4a2a-bf36-2332af004c7a",
+            "albums": null
+        },
+        {
+            "title": "Nothing Left to Say",
+            "id": "27295110-aaa5-4218-9fe2-4c141e2f0ff3",
+            "albums": null
+        },
+        {
+            "id": "3159c9da-78ad-44cd-8dd1-8c688f918289",
+            "title": "On Top of the World",
+            "albums": null
+        },
+        {
+            "title": "Only",
+            "id": "78cafb23-9653-4b92-9243-b96043c64974",
+            "albums": null
+        },
+        {
+            "title": "Pantomime",
+            "id": "15ac7833-52be-4e9e-bdc7-483447ac606e",
+            "albums": null
+        },
+        {
+            "title": "Pistol Whip",
+            "id": "18dda317-3d1b-4c88-86bd-bfb5c5b96d0d",
+            "albums": null
+        },
+        {
+            "title": "Polaroid",
+            "id": "14397c26-2566-4fe1-b2c1-c47946217d74",
+            "albums": null
+        },
+        {
+            "id": "0b96c73b-e38b-4537-b1ac-0d92b11b49be",
+            "title": "Radioactive",
+            "albums": null
+        },
+        {
+            "title": "Ready Aim Fire",
+            "id": "c1806a75-6b46-463d-a255-fadd0a8e1c65",
+            "albums": null
+        },
+        {
+            "title": "Real Life",
+            "id": "57f83895-e579-43f2-8990-3a295dd76106",
+            "albums": null
+        },
+        {
+            "id": "78b34a39-86ff-43c0-88d3-18e697483a29",
+            "title": "Release",
+            "albums": null
+        },
+        {
+            "title": "Rise Up",
+            "id": "4bde0cf9-068d-4ad9-9712-aae722b48702",
+            "albums": null
+        },
+        {
+            "id": "38686bff-ecab-45ea-9d4a-f25f170eee7b",
+            "title": "Rocks",
+            "albums": null
+        },
+        {
+            "id": "469fdcd4-8b4c-423a-9d19-f7a8f164423a",
+            "title": "Roots",
+            "albums": null
+        },
+        {
+            "id": "18fa0ef4-f787-4c6e-a2ee-99f0049363b4",
+            "title": "Round and Round",
+            "albums": null
+        },
+        {
+            "id": "e958a6f3-5b22-42d5-ac3f-10d21052c4bc",
+            "title": "Second Chances",
+            "albums": null
+        },
+        {
+            "id": "5e44032d-657b-4cd2-a81c-e9705bd80d54",
+            "title": "Selene",
+            "albums": null
+        },
+        {
+            "title": "Shots",
+            "id": "03e88e5e-0ab1-462f-acb9-abdecb5e4e29",
+            "albums": null
+        },
+        {
+            "id": "217a4438-2119-44b3-b7b4-5f6e40b10c6a",
+            "title": "Speak to Me",
+            "albums": null
+        },
+        {
+            "title": "Start Over",
+            "id": "1de47c9b-b24b-45f6-ab77-4a1ae95a4752",
+            "albums": null
+        },
+        {
+            "title": "Stuck",
+            "id": "08fbfa4d-51bc-4e5d-91af-7a7a591b8eaf",
+            "albums": null
+        },
+        {
+            "title": "Sucker For Pain",
+            "id": "03cafb58-2a90-4899-8574-47848dae08db",
+            "albums": null
+        },
+        {
+            "title": "Summer",
+            "id": "c3c25d9b-6230-48ab-9391-870a6546a942",
+            "albums": null
+        },
+        {
+            "title": "The Fall",
+            "id": "08c8a07e-bd20-4e0e-9691-ac55f5d04548",
+            "albums": null
+        },
+        {
+            "id": "9ca9955c-868a-4482-864e-81953a54c665",
+            "title": "The Pit",
+            "albums": null
+        },
+        {
+            "id": "16d2349b-95d2-4303-8279-de66971ea118",
+            "title": "The Unknown",
+            "albums": null
+        },
+        {
+            "title": "Thief",
+            "id": "2a22de07-3261-4318-a02e-0f6e56629df1",
+            "albums": null
+        },
+        {
+            "title": "Thunder",
+            "id": "21869574-4b3b-4aee-abd4-755093e21b2a",
+            "albums": null
+        },
+        {
+            "title": "Tip Toe",
+            "id": "94b0b6a9-efa2-4c97-b655-31d9dc292fd2",
+            "albums": null
+        },
+        {
+            "title": "Tokyo",
+            "id": "0256b69b-6591-4dd1-8530-567a5701139b",
+            "albums": null
+        },
+        {
+            "id": "aee4aaa1-93a5-4298-828e-c242d1ddc242",
+            "title": "Trouble",
+            "albums": null
+        },
+        {
+            "id": "6fdb229a-2267-459f-92a0-467bdcdc9c4d",
+            "title": "Underdog",
+            "albums": null
+        },
+        {
+            "id": "a950016c-fb11-4331-955e-3e127af84020",
+            "title": "Uptight",
+            "albums": null
+        },
+        {
+            "id": "c521ed14-31c3-4f2b-903f-86076fe3ed26",
+            "title": "Walking the Wire",
+            "albums": null
+        },
+        {
+            "id": "a7d56b31-5348-468a-9ba2-0e26bdc7e873",
+            "title": "Warriors",
+            "albums": null
+        },
+        {
+            "id": "2c7b7b44-4591-4e2f-b0d1-9a7ccc9b63b1",
+            "title": "West Coast",
+            "albums": null
+        },
+        {
+            "id": "3a97d59f-1185-4785-923e-48cdb5adf674",
+            "title": "Whatever It Takes",
+            "albums": null
+        },
+        {
+            "id": "3a0de278-90f7-494b-b35d-69162b03bacc",
+            "title": "Who We Are",
+            "albums": null
+        },
+        {
+            "id": "9f132628-42cb-4141-9abd-c9cb9ddb992f",
+            "title": "Wings",
+            "albums": null
+        },
+        {
+            "id": "452f6f18-18ee-463d-9fd7-4fe22c2243d1",
+            "title": "Working Man",
+            "albums": null
+        },
+        {
+            "id": "a3cec223-4a95-423a-abbc-b8d8ddd5f499",
+            "title": "Yesterday",
+            "albums": null
+        },
+        {
+            "title": "Zero",
+            "id": "f141a7af-d8d0-4b85-b112-f397267563f5",
+            "albums": null
+        }
+    ],
+    "relationships": {
+        "2c5e2a98-d9ea-46b5-9618-d9bb4863a920": 1
+    }
+}

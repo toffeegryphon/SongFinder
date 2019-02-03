@@ -3,24 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>SongFinder</title>
+
+    <LINK REL=StyleSheet HREF="../static/main.css" TYPE="text/css" MEDIA=screen>
   </head>
 
   <body>
-    <h1> Find songs by artist </h1>
-    <p> Using musicbrainz API. </p>
+  	<div class="row">
+  		<div class="column">
+		    <h1> Find songs by artist </h1>
+		    <p> Using musicbrainz API. </p>
 
-    <form action="{{ url_for('result') }}" method="POST">
-    	Artist Name:
-    	<input type="text" name="artist" value="{{ request.form.artist }}">
-    	<br>
-    	Get Albums Songs appear in?
-    	<input type="checkbox" name="getAlbum" checked="{{ request.form.getAlbum }}">
-    	<br>
-    	<input type="submit" name="search">
-    </form>
+		    <form action="{{ url_for('result') }}" method="POST">
+		    	{% block form %}
+		    		<div id="search">
+				    	Artist Name:
+				    	<input type="text" name="artist" value="{{ request.form.artist }}">
+				    	<br>
+				    	Get Albums Songs appear in?
+				    	<input type="checkbox" name="getAlbum">
+				    	<br>
+				    	<input type="submit" name="submit" value = "search">
+				    </div>
+		    	{% endblock %}
+		    </form>
+		</div>
 
-    {% block content %}
-    	<p>{{ res }}</p>
-    {% endblock %}
+		<div class="column">
+		    {% block content %}
+		    	<p>{{ res }}</p>
+		    {% endblock %}
+	    </div>
+	</div>
   </body>
 </html>

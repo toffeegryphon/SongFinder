@@ -1,15 +1,53 @@
 {% extends "main.html" %}
 
+{% block form %}
+	{{ super() }}
+
+	<div id="relationship">
+		<p>I recommend</p>
+    	Artist Name:
+    	<input type="text" name="second" value="{{ request.form.second }}">
+    	<br>
+    	<input type="submit" name="submit" value="relationship">
+	</div>
+{% endblock%}
+
 {% block content %}
-  <table border="1">
+	
+	<p>People also recommend</p>
+	<table border="1">
+		<tbody>
+			{% for artist in relationships %}
+				<tr>
+					<td>{{ artist[0] }}</td>
+					<td>{{ artist[1] }}</td>
+					<td>{{ artist[2] }}</td>
+			{% endfor %}
+		</tbody>
+	</table>
+	
+	<table border="1">
     	<tbody>
     		{% for song in result %}
     			<tr>
     				<td>{{ song.get('title') }}</td>
-    				<td>{{ song.get('id') }}</td>
-    				<td>{{ song.get('albums') }}</td>
+    				{% if song.get('album') %}
+    					<td>
+	    					<ul>
+	    						{% for album in song.get('albums') %}
+	    							{% if album %}
+	    								<li>{{ album.get('releases') }}</li>
+	    								{% else %}
+	    								<li>No album</li>
+	    							{% endif %}
+	    						{% endfor %}
+	    					</ul>
+    					</td>
+    					
+    				{% endif %}
     			</tr>
     		{% endfor %}
     	</tbody>
     </table>
+	
 {% endblock %}

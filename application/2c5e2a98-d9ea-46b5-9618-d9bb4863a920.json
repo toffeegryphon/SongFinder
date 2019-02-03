@@ -1,0 +1,530 @@
+{
+    "artistId": "2c5e2a98-d9ea-46b5-9618-d9bb4863a920",
+    "artistName": "george ezra",
+    "recording-count": 37,
+    "recordings": [
+        {
+            "id": "53044f2e-74cb-4dd7-86c3-2059fce01643",
+            "title": "All My Love",
+            "albums": [
+                {
+                    "id": "77ebc1c3-5f4b-4831-8893-fb6e4e52b539",
+                    "releases": "Staying at Tamara's"
+                }
+            ]
+        },
+        {
+            "title": "Angry Hill",
+            "id": "061ddad1-9206-4cbc-bea4-61e67461adce",
+            "albums": [
+                {
+                    "id": "d2a3af20-5eb1-47d4-8983-b6cb0ef591db",
+                    "releases": "Oct 18, 2013@ 2KHz, London, England"
+                },
+                {
+                    "id": "194f4f1f-eb41-4467-a945-3581335218ee",
+                    "releases": "Did You Hear the Rain?"
+                }
+            ]
+        },
+        {
+            "title": "Barcelona",
+            "id": "67f2bba6-fc36-4cab-9ebb-54ed2eb75fce",
+            "albums": [
+                {
+                    "id": "4041a6d1-f801-4320-967d-8592d9e0640c",
+                    "releases": "Pure FM: Lazy Factory Room 3"
+                },
+                {
+                    "id": "e288aabd-1501-4997-9ba4-a2109d70b96a",
+                    "releases": "BBC Radio 1's Live Lounge 2015"
+                },
+                {
+                    "id": "c56a69d5-daf2-4a89-a5ab-70b77fd0aa75",
+                    "releases": "Live in London - EP"
+                }
+            ]
+        },
+        {
+            "id": "2085af4b-e896-4c68-a2f0-777f4d9f816e",
+            "title": "Benjamin Twine",
+            "albums": [
+                {
+                    "id": "d2a3af20-5eb1-47d4-8983-b6cb0ef591db",
+                    "releases": "Oct 18, 2013@ 2KHz, London, England"
+                },
+                {
+                    "id": "194f4f1f-eb41-4467-a945-3581335218ee",
+                    "releases": "Did You Hear the Rain?"
+                }
+            ]
+        },
+        {
+            "title": "Blame It on Me",
+            "id": "3135bca6-0dbd-4997-b6dc-cbb20a9df7c8",
+            "albums": [
+                {
+                    "id": "0ec87e97-0945-4b6c-9cbd-3fa730d9f932",
+                    "releases": "Booom 2015: The First"
+                },
+                {
+                    "id": "02624dcf-8377-4185-8a86-68937a6c739b",
+                    "releases": "Now That's What I Call Music! 89"
+                }
+            ]
+        },
+        {
+            "title": "Blind Man in Amsterdam",
+            "id": "7b327ba7-ff25-41e0-a912-694aac00aed8",
+            "albums": [
+                {
+                    "id": "65cfd288-6dd9-4f09-99ff-80de6fe0d63a",
+                    "releases": "Wanted on Voyage"
+                }
+            ]
+        },
+        {
+            "id": "867283ce-ff08-49f2-9c2a-db589c4ac3ee",
+            "title": "Breakaway",
+            "albums": [
+                {
+                    "id": "65cfd288-6dd9-4f09-99ff-80de6fe0d63a",
+                    "releases": "Wanted on Voyage"
+                }
+            ]
+        },
+        {
+            "id": "17f6b094-2ff1-4787-94eb-3ace028fadc6",
+            "title": "Budapest",
+            "albums": [
+                {
+                    "id": "9570d693-a277-4a37-8627-73f0955a1e84",
+                    "releases": "Broadcasts Vol. 24"
+                },
+                {
+                    "id": "be1958f2-b5b9-4b30-b7ef-dcc25d308a84",
+                    "releases": "Lazy Sunday: The Album"
+                },
+                {
+                    "id": "10fcd7e4-2529-4ff5-ad5a-f8bcbacef82d",
+                    "releases": "NRJ Party Hits 2014, Volume 2"
+                },
+                {
+                    "id": "5596689c-bf75-4020-a678-3d2da80724fe",
+                    "releases": "KFOG Live From the Archives 22"
+                },
+                {
+                    "id": "20cdd756-9932-440b-b2c6-10a96569e009",
+                    "releases": "89.3 The Current: Live Current, Volume 12"
+                },
+                {
+                    "id": "d2a3af20-5eb1-47d4-8983-b6cb0ef591db",
+                    "releases": "Oct 18, 2013@ 2KHz, London, England"
+                },
+                {
+                    "id": "e5399a7b-c2c4-4ffa-9d82-d953b07f8441",
+                    "releases": "RTL Sommerhits 2014"
+                },
+                {
+                    "id": "c0003534-2c7c-489a-abf1-191806d463a5",
+                    "releases": "KBCO Studio C, Volume 27"
+                },
+                {
+                    "id": "b7b8a0b9-5b47-4ced-a5d1-28aa34ac571d",
+                    "releases": "BBC Radio 1's Live Lounge 2014"
+                },
+                {
+                    "id": "5ba8062b-f3e7-4efc-bc72-4b96e83bca41",
+                    "releases": "Ultimate Drive"
+                },
+                {
+                    "id": "c1a44157-f297-4061-9f08-65ccfb43a22f",
+                    "releases": "Now That's What I Call a Summer Party 2017"
+                },
+                {
+                    "id": "e0d4687c-2c99-480b-9865-725dbc472b7f",
+                    "releases": "Budapest (Remixes)"
+                },
+                {
+                    "id": "c56a69d5-daf2-4a89-a5ab-70b77fd0aa75",
+                    "releases": "Live in London - EP"
+                },
+                {
+                    "id": "4c7d03b6-b7c3-4b57-ad73-d29b3084cf59",
+                    "releases": "BBC Introducing Presents\u2026 Volume 1"
+                }
+            ]
+        },
+        {
+            "title": "Cassy O'",
+            "id": "88a8dde2-09f0-454b-84b4-1a44e11085cf",
+            "albums": [
+                {
+                    "id": "e5e78330-68b4-4ff1-b4a1-196c4f27d7b4",
+                    "releases": "Life Is Music 2014.2"
+                }
+            ]
+        },
+        {
+            "title": "Coat of Armour",
+            "id": "187328eb-ca0d-428c-8a93-7b482e419a4c",
+            "albums": [
+                {
+                    "id": "26b3a754-93fc-4c2a-885c-05d794c4b0eb",
+                    "releases": "Cassy O'"
+                }
+            ]
+        },
+        {
+            "title": "Da Vinci Riot Police",
+            "id": "51a6e64c-cb11-479a-8651-290a0f765f6b",
+            "albums": [
+                {
+                    "id": "65cfd288-6dd9-4f09-99ff-80de6fe0d63a",
+                    "releases": "Wanted on Voyage"
+                }
+            ]
+        },
+        {
+            "title": "Did You Hear the Rain",
+            "id": "ff3a5b76-b65f-40a7-b71b-0913f572fe32",
+            "albums": [
+                {
+                    "id": "65cfd288-6dd9-4f09-99ff-80de6fe0d63a",
+                    "releases": "Wanted on Voyage"
+                },
+                {
+                    "id": "d2a3af20-5eb1-47d4-8983-b6cb0ef591db",
+                    "releases": "Oct 18, 2013@ 2KHz, London, England"
+                },
+                {
+                    "id": "00b69db7-1d0e-4148-9eb8-a4a1a6ba1de9",
+                    "releases": "DMC DJ Promo 195"
+                },
+                {
+                    "id": "c56a69d5-daf2-4a89-a5ab-70b77fd0aa75",
+                    "releases": "Live in London - EP"
+                }
+            ]
+        },
+        {
+            "title": "Don't Matter Now",
+            "id": "22b299dc-8b72-4ee3-977e-733469d3f9a3",
+            "albums": [
+                {
+                    "id": "c8d877ce-ac4b-42fe-b2e9-7e162bbca940",
+                    "releases": "BBC Radio 1's Live Lounge 2017"
+                },
+                {
+                    "id": "d294a5fe-5636-4221-bad0-a123d47aaec1",
+                    "releases": "Lazy Sunday: The Album 3"
+                }
+            ]
+        },
+        {
+            "title": "Don't Worry Be Happy",
+            "id": "0f20ae72-5bc6-4438-8c56-4aa2e0df143f",
+            "albums": [
+                {
+                    "id": "c8d877ce-ac4b-42fe-b2e9-7e162bbca940",
+                    "releases": "BBC Radio 1's Live Lounge 2017"
+                }
+            ]
+        },
+        {
+            "id": "2d124ebd-c0ba-4d07-b6f6-2913a82b3eab",
+            "title": "Drawing Board",
+            "albums": [
+                {
+                    "id": "65cfd288-6dd9-4f09-99ff-80de6fe0d63a",
+                    "releases": "Wanted on Voyage"
+                }
+            ]
+        },
+        {
+            "id": "490794fc-cad9-4888-b882-fd7c87290deb",
+            "title": "George Ezra Live in Baden-Baden",
+            "albums": [
+                {
+                    "id": "65cfd288-6dd9-4f09-99ff-80de6fe0d63a",
+                    "releases": "Wanted on Voyage"
+                }
+            ]
+        },
+        {
+            "id": "3ff6cb7b-37b6-403e-9341-2c1ce9cd2422",
+            "title": "Get Away",
+            "albums": [
+                {
+                    "id": "77ebc1c3-5f4b-4831-8893-fb6e4e52b539",
+                    "releases": "Staying at Tamara's"
+                }
+            ]
+        },
+        {
+            "id": "3a620c10-f7ad-4c35-8dbd-5a50761d46de",
+            "title": "Get Lonely With Me",
+            "albums": [
+                {
+                    "id": "26b3a754-93fc-4c2a-885c-05d794c4b0eb",
+                    "releases": "Cassy O'"
+                }
+            ]
+        },
+        {
+            "title": "Girl From the North Country",
+            "id": "d4b37108-a805-4c39-9c9e-afeea77ac0d0",
+            "albums": [
+                {
+                    "id": "d11353d0-1ca5-4b34-9b31-52d00174d373",
+                    "releases": "Dermot O'Leary presents The Saturday Sessions 2015"
+                }
+            ]
+        },
+        {
+            "title": "Hold My Girl",
+            "id": "aef3a631-3380-4c17-b020-78e5e4ff17f0",
+            "albums": [
+                {
+                    "id": "ec51a6df-53f5-4eda-b667-727449483f77",
+                    "releases": "NOW That's What I Call Music! 101"
+                }
+            ]
+        },
+        {
+            "title": "It's Just My Skin",
+            "id": "e4c5005f-c68b-478b-933a-cab13eb4d3d6",
+            "albums": []
+        },
+        {
+            "title": "Leaving It Up to You",
+            "id": "5227daa6-d14b-431d-b348-ac90bc0a2206",
+            "albums": [
+                {
+                    "id": "65cfd288-6dd9-4f09-99ff-80de6fe0d63a",
+                    "releases": "Wanted on Voyage"
+                }
+            ]
+        },
+        {
+            "title": "Listen to the Man",
+            "id": "39cb6e94-d3d2-4731-a0ea-3dd22959c871",
+            "albums": [
+                {
+                    "id": "3cc1ccc8-5fe5-4c15-85d7-6ca70ef04a6a",
+                    "releases": "Coffeehouse Classics, Vol. 1"
+                }
+            ]
+        },
+        {
+            "title": "Only a Human",
+            "id": "593e4358-8b01-44ce-b058-9592210264b2",
+            "albums": [
+                {
+                    "id": "77ebc1c3-5f4b-4831-8893-fb6e4e52b539",
+                    "releases": "Staying at Tamara's"
+                }
+            ]
+        },
+        {
+            "id": "07d42e75-ead0-4198-8390-6e9a792cac8a",
+            "title": "Over the Creek",
+            "albums": [
+                {
+                    "id": "65cfd288-6dd9-4f09-99ff-80de6fe0d63a",
+                    "releases": "Wanted on Voyage"
+                },
+                {
+                    "id": "26b3a754-93fc-4c2a-885c-05d794c4b0eb",
+                    "releases": "Cassy O'"
+                }
+            ]
+        },
+        {
+            "title": "Paradise",
+            "id": "0181d743-d473-445b-831d-50112011b9f1",
+            "albums": [
+                {
+                    "id": "5e673b7a-ee7a-4db6-89a2-2546d0ea199b",
+                    "releases": "BBC Radio 1's Live Lounge 2018"
+                },
+                {
+                    "id": "97bb4a47-8203-4390-a2a7-5dd227f0e11a",
+                    "releases": "The Dome, Vol. 85"
+                },
+                {
+                    "id": "a0d48177-c538-44bf-825e-05a1d2141db1",
+                    "releases": "ChartBoxx 6.2018"
+                },
+                {
+                    "id": "dfdbecf1-e7df-4d72-a72c-f656c0c59760",
+                    "releases": "NOW That's What I Call Summer Party 2018"
+                },
+                {
+                    "id": "0799309c-7fac-4161-bea0-261a0699c153",
+                    "releases": "Radio Teddy Hits Vol. 19"
+                },
+                {
+                    "id": "6c658e64-97b4-482b-ad50-8c2dcf32ea64",
+                    "releases": "Toggo Music 49"
+                },
+                {
+                    "id": "f27198e2-f21d-4443-82c7-a4d69eb88533",
+                    "releases": "Paradise (acoustic)"
+                },
+                {
+                    "id": "e6e59cd6-cc48-4c44-aa18-9d6f3cca3054",
+                    "releases": "Paradise (Bakermat remix)"
+                }
+            ]
+        },
+        {
+            "title": "Pretty Shining People",
+            "id": "8621f1f4-55e4-4885-8c60-fa36c8f80efb",
+            "albums": [
+                {
+                    "id": "77ebc1c3-5f4b-4831-8893-fb6e4e52b539",
+                    "releases": "Staying at Tamara's"
+                }
+            ]
+        },
+        {
+            "id": "2eedf91c-b062-409f-b633-593a721622ce",
+            "title": "Saviour",
+            "albums": [
+                {
+                    "id": "77ebc1c3-5f4b-4831-8893-fb6e4e52b539",
+                    "releases": "Staying at Tamara's"
+                }
+            ]
+        },
+        {
+            "id": "0cd6775e-dc7d-479f-bc46-e6b70ea2a0d6",
+            "title": "Shotgun",
+            "albums": [
+                {
+                    "id": "649a18e3-ecdd-41e1-9042-5adf1d6292be",
+                    "releases": "Now That's What I Call Now: 100 Hits From 100 Nows!"
+                },
+                {
+                    "id": "53ef79a9-7e34-404f-a4e2-bc25cc05793e",
+                    "releases": "Q-Top 1000: 2018"
+                },
+                {
+                    "id": "e47055d3-e84d-491d-a484-f52bde3d0f71",
+                    "releases": "De Afrekening 65"
+                },
+                {
+                    "id": "e87996d5-9a74-43de-959c-2428148f5626",
+                    "releases": "Bravo: The Hits 2018"
+                },
+                {
+                    "id": "94fdb2c1-c587-432e-8ca5-185f07363e9a",
+                    "releases": "Absolute Music 85"
+                },
+                {
+                    "id": "9fed0045-5505-44a8-bce0-901094d7b53e",
+                    "releases": "NOW That's What I Call Music! 69"
+                },
+                {
+                    "id": "2d4f4cdb-8dc6-407a-af7b-082220d92f36",
+                    "releases": "Essential Hits 160"
+                },
+                {
+                    "id": "e69f8fc8-137e-463f-bcf4-137700145d29",
+                    "releases": "Ministry of Sound: The Annual 2019"
+                }
+            ]
+        },
+        {
+            "id": "8967dae5-a6f4-47c3-ba85-93d4b22fd1cb",
+            "title": "Song 6",
+            "albums": [
+                {
+                    "id": "65cfd288-6dd9-4f09-99ff-80de6fe0d63a",
+                    "releases": "Wanted on Voyage"
+                },
+                {
+                    "id": "c56a69d5-daf2-4a89-a5ab-70b77fd0aa75",
+                    "releases": "Live in London - EP"
+                }
+            ]
+        },
+        {
+            "id": "1b895642-b223-4d08-9e8b-af90231a0ac9",
+            "title": "Spectacular Rival",
+            "albums": [
+                {
+                    "id": "65cfd288-6dd9-4f09-99ff-80de6fe0d63a",
+                    "releases": "Wanted on Voyage"
+                }
+            ]
+        },
+        {
+            "title": "Stand by Your Gun",
+            "id": "a5aeb62a-9b10-4902-8ec7-f9039fee5174",
+            "albums": [
+                {
+                    "id": "65cfd288-6dd9-4f09-99ff-80de6fe0d63a",
+                    "releases": "Wanted on Voyage"
+                }
+            ]
+        },
+        {
+            "title": "Sugarcoat",
+            "id": "016ec884-f607-42d1-a7a4-de68ce240252",
+            "albums": [
+                {
+                    "id": "77ebc1c3-5f4b-4831-8893-fb6e4e52b539",
+                    "releases": "Staying at Tamara's"
+                }
+            ]
+        },
+        {
+            "title": "The Beautiful Dream",
+            "id": "3494a25e-80ab-4d2e-bcf7-099c0cb94655",
+            "albums": [
+                {
+                    "id": "77ebc1c3-5f4b-4831-8893-fb6e4e52b539",
+                    "releases": "Staying at Tamara's"
+                }
+            ]
+        },
+        {
+            "title": "The Story of the Ezra Express",
+            "id": "396def1b-9265-4781-bdf9-7a004f27eea8",
+            "albums": [
+                {
+                    "id": "65cfd288-6dd9-4f09-99ff-80de6fe0d63a",
+                    "releases": "Wanted on Voyage"
+                }
+            ]
+        },
+        {
+            "title": "Welcome to Daytrotter",
+            "id": "70f31953-2ba0-41b1-b844-f11040b52aef",
+            "albums": [
+                {
+                    "id": "d2a3af20-5eb1-47d4-8983-b6cb0ef591db",
+                    "releases": "Oct 18, 2013@ 2KHz, London, England"
+                }
+            ]
+        },
+        {
+            "title": "White Christmas",
+            "id": "ccc2e96e-53f8-4fc6-9930-e2217542f77d",
+            "albums": [
+                {
+                    "id": "641f026f-07a8-4700-839c-4ef7dbbe1a26",
+                    "releases": "Best of Christmas"
+                }
+            ]
+        }
+    ],
+    "relationships": {
+        "73183948-2489-41cb-9a2d-8be5071971a5": 8,
+        "6f1a58bf-9b1b-49cf-a44a-6cefad7ae04f": 1,
+        "012151a8-0f9a-44c9-997f-ebd68b5389f9": 1,
+        "134e6410-6954-45d1-bd4a-0f2d2ad5471d": 1
+    }
+}
