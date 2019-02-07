@@ -14,16 +14,16 @@
 			    <h1> Find songs by artist </h1>
 			    <p> Using musicbrainz API. </p>
 
-			    <form action="{{ url_for('result') }}" method="POST">
+			    <form action="{{ url_for('result') }}" method="POST" name="searchForm">
 			    	{% block form %}
 			    		<div id="search">
 					    	Artist Name:
-					    	<input type="text" name="artist" value="{{ request.form.artist }}">
+					    	<input type="text" id="artist" name="artist" value="{{ request.form.artist }}">
 					    	<br>
 					    	Get Albums Songs appear in?
-					    	<input type="checkbox" name="getAlbum">
+					    	<input type="checkbox" id="getAlbum" name="getAlbum">
 					    	<br>
-					    	<input type="submit" name="submit" value = "search">
+					    	<input type="submit" id="submit" name="submit" value = "search">
 					    </div>
 			    	{% endblock %}
 			    </form>
@@ -34,7 +34,13 @@
 			    			{% for entry in charts %}
 			    				<tr>
 			    					<td>{{ entry.get('trackName') }}</td>
-			    					<td><a href="/">{{ entry.get('artist') }}</a></td>
+			    					<td><a href="{{ url_for('result') }}" onclick="
+			    						var redir = function() {
+			    							document.getElementById('artist').value = 'George Ezra';
+			    							document.forms['searchForm'].method = 'POST'
+			    							document.forms['searchForm'].submit();}
+			    						redir();
+			    					">{{ entry.get('artist') }}</a></td>
 			    				</tr>
 			    			{% endfor %}
 			    		</tbody>

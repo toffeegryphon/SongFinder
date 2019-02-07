@@ -307,7 +307,7 @@ def getCharts():
         line = 1
         for row in chartsCSV:
             charts.append({'position' : row['Position'], 'trackName' : row['Track Name'], 'artist' : row['Artist'], 'streams' : row['Streams'], 'url' : row['URL']})
-    print(charts)
+    #print(charts)
 
     ##Reset header, if not musicbrainz calls do not work
     opener = urllib.request.build_opener()

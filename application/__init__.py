@@ -16,7 +16,7 @@ def main():
 
 @app.route('/', methods = ['POST', 'GET'])
 def result():
-	if request.method == 'POST':
+	if request.method == 'POST' or request.method == 'GET':
 		if request.form.get('submit') == 'search':
 			artistName = request.form.get('artist')
 			print("artist: " + artistName)
