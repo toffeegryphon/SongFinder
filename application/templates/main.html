@@ -10,22 +10,24 @@
   <body>
   	<div class="row">
   		<div class="column">
-		    <h1> Find songs by artist </h1>
-		    <p> Using musicbrainz API. </p>
+  			{% block left %}
+			    <h1> Find songs by artist </h1>
+			    <p> Using musicbrainz API. </p>
 
-		    <form action="{{ url_for('result') }}" method="POST">
-		    	{% block form %}
-		    		<div id="search">
-				    	Artist Name:
-				    	<input type="text" name="artist" value="{{ request.form.artist }}">
-				    	<br>
-				    	Get Albums Songs appear in?
-				    	<input type="checkbox" name="getAlbum">
-				    	<br>
-				    	<input type="submit" name="submit" value = "search">
-				    </div>
-		    	{% endblock %}
-		    </form>
+			    <form action="{{ url_for('result') }}" method="POST">
+			    	{% block form %}
+			    		<div id="search">
+					    	Artist Name:
+					    	<input type="text" name="artist" value="{{ request.form.artist }}">
+					    	<br>
+					    	Get Albums Songs appear in?
+					    	<input type="checkbox" name="getAlbum">
+					    	<br>
+					    	<input type="submit" name="submit" value = "search">
+					    </div>
+			    	{% endblock %}
+			    </form>
+			{% endblock %}
 		</div>
 
 		<div class="column">

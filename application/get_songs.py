@@ -1,4 +1,5 @@
 import os, urllib.request, json
+from unidecode import unidecode
 
 BASE_URL = "https://musicbrainz.org/ws/2/"
 QUERY_ARTIST = "lana+del+rey"
@@ -11,17 +12,28 @@ def getArtistName(artistId):
     artistName = json.loads(requestArtistName).get('name')
     return artistName
 
-def getArtistId(artist):
+def getArtistId(artist, numberOfResults = 1):
+    ##TODO Check if artist name is same as the one obtained from ID
     print("Requesting %s's artist ID" % (artist))
     QUERY_ARTIST = artist.lower().replace(" ", "+")
     ##REQUEST_ARTIST_ID = BASE_URL + "artist/?query=" + QUERY_ARTIST + "&limit=1&fmt=json"
-    REQUEST_ARTIST_ID = "%sartist/?query=%s&limit=1&fmt=json" % (BASE_URL, QUERY_ARTIST)
+    REQUEST_ARTIST_ID = "%sartist/?query=%s&limit=%s&fmt=json" % (BASE_URL, QUERY_ARTIS, str(numberOfResults))
     print(REQUEST_ARTIST_ID)
     requestArtistId = urllib.request.urlopen(urllib.request.Request(REQUEST_ARTIST_ID)).read().decode("utf-8")
+
+        if numberOfResults != 1:
+            artistIds = {}
+            artists = json.loads(requestArtistId).get('artists')
+            for artist in artists:
+                artistIds.update({artist.get('id') : artist.get('name')})
+            return artistIds
+
+
     artistId = json.loads(requestArtistId).get('artists')[0].get('id')
     return artistId
 
 def getSongsByArtistId(artistId, offset=None, songlist=None):
+    ##TODO Fix heroku throws 500 Internal Server Error @ ~ page 12
     print("Requesting raw list of %s's recordings" % (artistId))
     if offset == None:
         offset = 0
@@ -41,7 +53,6 @@ def getSongsByArtistId(artistId, offset=None, songlist=None):
         offset += 100
         getSongsByArtistId(artistId, offset, songlist)
     ##print("FINISHED WHILE LOOP")
-    ##BUG? Calls subsequent lines multiple times
     ##print(json.dumps(songlist, indent=4))
     else:
         print(len(songlist))
@@ -62,12 +73,11 @@ def cleanList(songlist, artistId):
     first.pop("video")
     first.pop("length")
     first.pop("disambiguation")
-    first.update({"albums" : None})
+    first.update({"title" : unidecode(first.get("title")), "albums" : None})
     songlistClean.append(first)
     print(songlistClean)
 
     ##TODO Optimise
-    ##TODO remove everything in brackets, remove symbols
     for song in songlist:
         #songTitle = song.get("title").lower().replace(" ", "").replace(",", "").replace("’", "").replace("'", "").replace("&", "and")
         songTitle = song.get("title").lower()
@@ -77,29 +87,19 @@ def cleanList(songlist, artistId):
             ##print("start: " + str(start))
             ##print("end: " + str(end))
             songTitle = songTitle.replace(songTitle[start-1:end+1], "").replace(" ", "").replace(",", "").replace("’", "").replace("'", "").replace("&", "and")
+            songTitle = unidecode(songTitle)
             ##print(songTitle)
 
         else:
             songTitle = song.get("title").lower().replace(" ", "").replace(",", "").replace("’", "").replace("'", "").replace("&", "and")
+            songTitle = unidecode(songTitle)
 
         print(songTitle)
         
         for songC in songlistClean:
             songCTitle = songC.get("title").lower().replace(" ", "").replace(",", "").replace("’", "").replace("'", "").replace("&", "and")
-##            songCTitle = songC.get("title").lower()
-##            if '(' in songCTitle:
-##                start = songCTitle.rfind('(')
-##                end = songCTitle.rfind(')')
-##                ##print("start: " + str(start))
-##                ##print("end: " + str(end))
-##                songCTitle = songCTitle.replace(songCTitle[start-1:end+1], "").replace(" ", "").replace(",", "").replace("’", "").replace("'", "").replace("&", "and")
-##                ##print(songCTitle)
-##
-##            else:
-##                songCTitle = songC.get("title").lower().replace(" ", "").replace(",", "").replace("’", "").replace("'", "").replace("&", "and")
-
-            ##print(songCTitle)
-            
+            songCTitle = unidecode(songCTitle)
+    
             if songCTitle in songTitle or songTitle in songCTitle:
                 print("It exists")
                 break
@@ -111,7 +111,8 @@ def cleanList(songlist, artistId):
             song.pop("disambiguation")
             ##TODO Find a less hacky workaround
 
-            songTitle = song.get("title").replace("\u2013", "-").replace("\u2014", "-").replace("\u2019", "'")
+            #songTitle = song.get("title").replace("\u2013", "-").replace("\u2014", "-").replace("\u2019", "'")
+            songTitle = song.get('title')
             if '(' in songTitle:
                 start = songTitle.rfind('(')
                 end = songTitle.rfind(')')
@@ -119,8 +120,9 @@ def cleanList(songlist, artistId):
                 ##print("end: " + str(end))
                 songTitle = songTitle.replace(songTitle[start-1:end+1], "")
                 ##print(songTitle)
-            
-            song.update({"title" : songTitle.replace("\u2013", "-").replace("\u2014", "-").replace("\u2019", "'"), "albums" : None})
+
+            #song.update({"title" : songTitle.replace("\u2013", "-").replace("\u2014", "-").replace("\u2019", "'"), "albums" : None})
+            song.update({"title" : songTitle, "albums" : None})
             songlistClean.append(song)
             print(json.dumps(song, indent = 4))
 
@@ -180,11 +182,36 @@ def getSongsByArtist(artist, getAlbumsOfSongs = False):
         ##console.log(json.dumps(songlist, indent=4))
     return songlist
 
-##TODO Add another param for id or name
 ##TODO Add versions. If version does not match, delete file and rebuild
 def buildArtist(artistName, getAlbumsOfSongs = False):
     artistId = getArtistId(artistName)
 
+    if os.path.isfile('./%s.json' % (artistId)):
+        print("Artist already exists")
+        with open('./%s.json' % (artistId), 'r') as artistFile:
+            return json.load(artistFile)
+
+    print("Building %s's artist profile" % (artistName))
+    artist = {"artistId" : artistId, "artistName" : artistName}
+
+    if os.path.isfile('./%s_clean.json' % (artistId)):
+        print('./%s_clean.json' % (artistId))
+        with open('./%s_clean.json' % (artistId), 'r') as songsFile:
+            songs = json.load(songsFile)
+
+    else:
+        songs = getSongsByArtist(artistName, getAlbumsOfSongs)
+
+    ##Build Artist
+    artist.update({"recording-count" : len(songs), "recordings" : songs, "relationships" : {}})
+    print(json.dumps(artist, indent = 4))
+
+    with open('%s.json' % (artistId), 'w') as artistFile:
+        json.dump(artist, artistFile, indent = 4)
+
+    return artist
+
+def buildArtistWithId(artistId, getAlbumsOfSongs = False):
     if os.path.isfile('./%s.json' % (artistId)):
         print("Artist already exists")
         with open('./%s.json' % (artistId), 'r') as artistFile:

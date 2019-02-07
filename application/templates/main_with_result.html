@@ -12,19 +12,24 @@
 	</div>
 {% endblock%}
 
-{% block content %}
-	
-	<p>People also recommend</p>
-	<table border="1">
+{% block left%}
+	{{ super() }}
+
+	<div id='extend'>
+		<p>People also recommend</p>
+		<table border="1">
 		<tbody>
 			{% for artist in relationships %}
 				<tr>
 					<td>{{ artist[0] }}</td>
-					<td>{{ artist[1] }}</td>
 					<td>{{ artist[2] }}</td>
 			{% endfor %}
 		</tbody>
 	</table>
+	</div>
+{% endblock %}
+
+{% block content %}
 	
 	<table border="1">
     	<tbody>
