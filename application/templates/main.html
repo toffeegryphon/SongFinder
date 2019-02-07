@@ -27,6 +27,19 @@
 					    </div>
 			    	{% endblock %}
 			    </form>
+
+			    <div id="charts">
+			    	<table border="1">
+			    		<tbody>
+			    			{% for entry in charts %}
+			    				<tr>
+			    					<td>{{ entry.get('trackName') }}</td>
+			    					<td><a href="/">{{ entry.get('artist') }}</a></td>
+			    				</tr>
+			    			{% endfor %}
+			    		</tbody>
+			    	</table>
+			    </div>
 			{% endblock %}
 		</div>
 

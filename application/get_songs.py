@@ -1,4 +1,4 @@
-import os, urllib.request, json
+import os, urllib.request, json, csv
 from unidecode import unidecode
 
 BASE_URL = "https://musicbrainz.org/ws/2/"
@@ -17,16 +17,16 @@ def getArtistId(artist, numberOfResults = 1):
     print("Requesting %s's artist ID" % (artist))
     QUERY_ARTIST = artist.lower().replace(" ", "+")
     ##REQUEST_ARTIST_ID = BASE_URL + "artist/?query=" + QUERY_ARTIST + "&limit=1&fmt=json"
-    REQUEST_ARTIST_ID = "%sartist/?query=%s&limit=%s&fmt=json" % (BASE_URL, QUERY_ARTIS, str(numberOfResults))
+    REQUEST_ARTIST_ID = "%sartist/?query=%s&limit=%s&fmt=json" % (BASE_URL, QUERY_ARTIST, str(numberOfResults))
     print(REQUEST_ARTIST_ID)
     requestArtistId = urllib.request.urlopen(urllib.request.Request(REQUEST_ARTIST_ID)).read().decode("utf-8")
 
-        if numberOfResults != 1:
-            artistIds = {}
-            artists = json.loads(requestArtistId).get('artists')
-            for artist in artists:
-                artistIds.update({artist.get('id') : artist.get('name')})
-            return artistIds
+    if numberOfResults != 1:
+        artistIds = {}
+        artists = json.loads(requestArtistId).get('artists')
+        for artist in artists:
+            artistIds.update({artist.get('id') : artist.get('name')})
+        return artistIds
 
 
     artistId = json.loads(requestArtistId).get('artists')[0].get('id')
@@ -284,3 +284,34 @@ def addRelationship(secondArtistName, mainArtistName):
         json.dump(secondArtist, secondArtistFile, indent = 4)
 
     return(mainArtist.get("relationships").get(secondId))
+
+SPOTIFY_BASE = 'https://spotifycharts.com/'
+SPOTIFY_DEFAULT = '%s/regional/global/daily/latest/download' % SPOTIFY_BASE
+
+def getCharts():
+    opener = urllib.request.build_opener()
+    opener.addheaders = [('User-Agent', 'Mozilla/5.0')]
+    urllib.request.install_opener(opener)
+
+    requestCharts = urllib.request.urlretrieve(SPOTIFY_DEFAULT, 'charts.csv')
+
+    #TODO Most likely can be removed
+    with open('charts.csv', 'r') as file, open('charts_clean.csv', 'w') as output:
+        next(file)
+        for line in file:
+            output.write(line)
+
+    charts = []
+    with open('charts_clean.csv', 'r') as file:
+        chartsCSV = csv.DictReader(file)
+        line = 1
+        for row in chartsCSV:
+            charts.append({'position' : row['Position'], 'trackName' : row['Track Name'], 'artist' : row['Artist'], 'streams' : row['Streams'], 'url' : row['URL']})
+    print(charts)
+
+    ##Reset header, if not musicbrainz calls do not work
+    opener = urllib.request.build_opener()
+    opener.addheaders = [('User-Agent', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0')]
+    urllib.request.install_opener(opener)
+
+    return charts

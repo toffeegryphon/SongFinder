@@ -8,7 +8,11 @@ cache = SimpleCache()
 
 @app.route('/')
 def main():
-	return render_template('main.html')
+
+	charts = songs.getCharts()[0:4]
+	cache.set('charts', charts)
+
+	return render_template('main.html', charts = charts)
 
 @app.route('/', methods = ['POST', 'GET'])
 def result():
