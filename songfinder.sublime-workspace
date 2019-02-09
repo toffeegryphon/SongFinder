@@ -11,26 +11,26 @@
 			"file": "application/get_songs.py",
 			"settings":
 			{
-				"buffer_size": 11655,
+				"buffer_size": 12836,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "application/__init__.py",
 			"settings":
 			{
-				"buffer_size": 2651,
-				"line_ending": "Unix"
+				"buffer_size": 2759,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "application/templates/main_with_result.html",
 			"settings":
 			{
-				"buffer_size": 1189,
+				"buffer_size": 1197,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -66,9 +66,7 @@
 	},
 	"expanded_folders":
 	[
-		"/home/nairen/Projects/SongFinder",
-		"/home/nairen/Projects/SongFinder/application",
-		"/home/nairen/Projects/SongFinder/application/templates"
+		"/D/Fu Nairen/Projects/songs"
 	],
 	"file_history":
 	[
@@ -116,15 +114,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11655,
+						"buffer_size": 12836,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								911,
-								911
+								0,
+								0
 							]
 						],
 						"settings":
@@ -147,15 +145,15 @@
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2651,
+						"buffer_size": 2759,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1168,
-								1168
+								0,
+								0
 							]
 						],
 						"settings":
@@ -176,15 +174,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1189,
+						"buffer_size": 1197,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								344,
-								344
+								0,
+								0
 							]
 						],
 						"settings":

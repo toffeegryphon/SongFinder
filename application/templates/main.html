@@ -5,6 +5,7 @@
     <title>SongFinder</title>
 
     <LINK REL=StyleSheet HREF="../static/main.css" TYPE="text/css" MEDIA=screen>
+    <script type="text/javascript" src="../static/main.js"></script>
   </head>
 
   <body>
@@ -14,7 +15,7 @@
 			    <h1> Find songs by artist </h1>
 			    <p> Using musicbrainz API. </p>
 
-			    <form action="{{ url_for('result') }}" method="POST" name="searchForm">
+			    <form action="{{ url_for('result', artistName = artistName) }}" method="POST" name="searchForm">
 			    	{% block form %}
 			    		<div id="search">
 					    	Artist Name:
@@ -23,7 +24,11 @@
 					    	Get Albums Songs appear in?
 					    	<input type="checkbox" id="getAlbum" name="getAlbum">
 					    	<br>
-					    	<input type="submit" id="submit" name="submit" value = "search">
+					    	<input type="submit" id="submit" name="submit" value="search" onclick="
+					    	this.form.action = this.form.action + document.getElementById('artist').value;
+					    	console.log(this.form.action);
+					    	console.log(document.getElementById('artist').value);
+					    	">
 					    </div>
 			    	{% endblock %}
 			    </form>
@@ -34,13 +39,7 @@
 			    			{% for entry in charts %}
 			    				<tr>
 			    					<td>{{ entry.get('trackName') }}</td>
-			    					<td><a href="{{ url_for('result') }}" onclick="
-			    						var redir = function() {
-			    							document.getElementById('artist').value = 'George Ezra';
-			    							document.forms['searchForm'].method = 'POST'
-			    							document.forms['searchForm'].submit();}
-			    						redir();
-			    					">{{ entry.get('artist') }}</a></td>
+			    					<td>{{ entry.get('artist') }}</a></td>
 			    				</tr>
 			    			{% endfor %}
 			    		</tbody>

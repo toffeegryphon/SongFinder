@@ -14,11 +14,11 @@ def main():
 
 	return render_template('main.html', charts = charts)
 
-@app.route('/', methods = ['POST', 'GET'])
-def result():
+@app.route('/<artistName>', methods = ['POST', 'GET'])
+def result(artistName):
 	if request.method == 'POST' or request.method == 'GET':
 		if request.form.get('submit') == 'search':
-			artistName = request.form.get('artist')
+			artistName = artistName
 			print("artist: " + artistName)
 			print("getAlbum: " + str(request.form.get('getAlbum')))
 
@@ -71,6 +71,15 @@ def result():
 
 	##TODO Fix bug. Somehow, main_with_result throws error if result is used instead of res
 	return render_template("main.html", res = "Please enter artist")
+
+# ##TODO make this work
+# @app.route('/')
+# def resultFromCharts():
+# 	pass
+
+@app.route('/<track>', methods = ['POST', 'GET'])
+def upvote(track):
+	pass
 
 if __name__ == "__main__":
 	app.run(debug=True)

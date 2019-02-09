@@ -37,6 +37,7 @@
     	<tbody>
     		{% for song in result %}
     			<tr>
+    				<td><a href="{{ url_for('upvote', track=song.get('title')) }}"><button type="submit" value="{{ song.get('title') }}">^</button></td>
     				<td>{{ song.get('title') }}</td>
     				{% if song.get('album') %}
     					<td>

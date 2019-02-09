@@ -122,7 +122,7 @@ def cleanList(songlist, artistId):
                 ##print(songTitle)
 
             #song.update({"title" : songTitle.replace("\u2013", "-").replace("\u2014", "-").replace("\u2019", "'"), "albums" : None})
-            song.update({"title" : songTitle, "albums" : None})
+            song.update({"title" : songTitle, "albums" : None, "votes" : 0})
             songlistClean.append(song)
             print(json.dumps(song, indent = 4))
 
