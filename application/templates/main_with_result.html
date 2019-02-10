@@ -53,6 +53,12 @@
 
 	<table border="1">
     	<tbody>
+    		<form action="{{ url_for('result', artistName = artistName) }}" method="POST" id="sortTracks">
+	    		<tr>
+	    			<td><button type="submit" name="submit" value="Sort.VOTES">v</button></td>
+	    			<td><button type="submit" name="submit" value="Sort.ALPHABETICAL">v</button></td>
+	    		</tr>
+	    	</form>
     		{% for song in result %}
     			<tr>
     				<td>{{ song.get('votes') }}<a href="{{ url_for('result', artistName = artistName, track = song.get('title')) }}"><button type="submit" value="{{ song.get('title') }}">^</button></td>
@@ -68,8 +74,7 @@
 	    							{% endif %}
 	    						{% endfor %}
 	    					</ul>
-    					</td>
-    					
+    					</td>	
     				{% endif %}
     			</tr>
     		{% endfor %}

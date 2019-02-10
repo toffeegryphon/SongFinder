@@ -1,13 +1,14 @@
 {
     "artistId": "2c5e2a98-d9ea-46b5-9618-d9bb4863a920",
     "artistName": "george ezra",
-    "recording-count": 37,
+    "recordings-count": 37,
+    "recordings-order": 1,
     "recordings": [
         {
             "id": "53044f2e-74cb-4dd7-86c3-2059fce01643",
             "title": "All My Love",
             "albums": null,
-            "votes": 5
+            "votes": 2
         },
         {
             "title": "Angry Hill",
@@ -34,20 +35,20 @@
             "votes": 0
         },
         {
-            "id": "7b327ba7-ff25-41e0-a912-694aac00aed8",
             "title": "Blind Man in Amsterdam",
+            "id": "7b327ba7-ff25-41e0-a912-694aac00aed8",
             "albums": null,
             "votes": 0
         },
         {
-            "title": "Breakaway",
             "id": "867283ce-ff08-49f2-9c2a-db589c4ac3ee",
+            "title": "Breakaway",
             "albums": null,
             "votes": 0
         },
         {
-            "id": "17f6b094-2ff1-4787-94eb-3ace028fadc6",
             "title": "Budapest",
+            "id": "17f6b094-2ff1-4787-94eb-3ace028fadc6",
             "albums": null,
             "votes": 0
         },
@@ -55,11 +56,11 @@
             "id": "88a8dde2-09f0-454b-84b4-1a44e11085cf",
             "title": "Cassy O'",
             "albums": null,
-            "votes": 0
+            "votes": 1
         },
         {
-            "title": "Coat of Armour",
             "id": "187328eb-ca0d-428c-8a93-7b482e419a4c",
+            "title": "Coat of Armour",
             "albums": null,
             "votes": 0
         },
@@ -76,8 +77,8 @@
             "votes": 0
         },
         {
-            "title": "Don't Matter Now",
             "id": "22b299dc-8b72-4ee3-977e-733469d3f9a3",
+            "title": "Don't Matter Now",
             "albums": null,
             "votes": 0
         },
@@ -88,8 +89,8 @@
             "votes": 0
         },
         {
-            "id": "2d124ebd-c0ba-4d07-b6f6-2913a82b3eab",
             "title": "Drawing Board",
+            "id": "2d124ebd-c0ba-4d07-b6f6-2913a82b3eab",
             "albums": null,
             "votes": 0
         },
@@ -100,8 +101,8 @@
             "votes": 0
         },
         {
-            "id": "3ff6cb7b-37b6-403e-9341-2c1ce9cd2422",
             "title": "Get Away",
+            "id": "3ff6cb7b-37b6-403e-9341-2c1ce9cd2422",
             "albums": null,
             "votes": 0
         },
@@ -112,8 +113,8 @@
             "votes": 0
         },
         {
-            "title": "Girl From the North Country",
             "id": "d4b37108-a805-4c39-9c9e-afeea77ac0d0",
+            "title": "Girl From the North Country",
             "albums": null,
             "votes": 0
         },
@@ -136,8 +137,8 @@
             "votes": 0
         },
         {
-            "id": "39cb6e94-d3d2-4731-a0ea-3dd22959c871",
             "title": "Listen to the Man",
+            "id": "39cb6e94-d3d2-4731-a0ea-3dd22959c871",
             "albums": null,
             "votes": 0
         },
@@ -148,8 +149,8 @@
             "votes": 0
         },
         {
-            "title": "Over the Creek",
             "id": "07d42e75-ead0-4198-8390-6e9a792cac8a",
+            "title": "Over the Creek",
             "albums": null,
             "votes": 0
         },
@@ -160,10 +161,10 @@
             "votes": 0
         },
         {
-            "title": "Pretty Shining People",
             "id": "8621f1f4-55e4-4885-8c60-fa36c8f80efb",
+            "title": "Pretty Shining People",
             "albums": null,
-            "votes": 1
+            "votes": 0
         },
         {
             "title": "Saviour",
@@ -172,20 +173,20 @@
             "votes": 0
         },
         {
-            "title": "Shotgun",
             "id": "0cd6775e-dc7d-479f-bc46-e6b70ea2a0d6",
+            "title": "Shotgun",
             "albums": null,
             "votes": 0
         },
         {
-            "title": "Song 6",
             "id": "8967dae5-a6f4-47c3-ba85-93d4b22fd1cb",
+            "title": "Song 6",
             "albums": null,
             "votes": 0
         },
         {
-            "id": "1b895642-b223-4d08-9e8b-af90231a0ac9",
             "title": "Spectacular Rival",
+            "id": "1b895642-b223-4d08-9e8b-af90231a0ac9",
             "albums": null,
             "votes": 0
         },
@@ -208,14 +209,14 @@
             "votes": 0
         },
         {
-            "title": "The Story of the Ezra Express",
             "id": "396def1b-9265-4781-bdf9-7a004f27eea8",
+            "title": "The Story of the Ezra Express",
             "albums": null,
             "votes": 0
         },
         {
-            "title": "Welcome to Daytrotter",
             "id": "70f31953-2ba0-41b1-b844-f11040b52aef",
+            "title": "Welcome to Daytrotter",
             "albums": null,
             "votes": 0
         },
@@ -226,5 +227,7 @@
             "votes": 0
         }
     ],
-    "relationships": {}
+    "relationships": {
+        "73183948-2489-41cb-9a2d-8be5071971a5": 3
+    }
 }

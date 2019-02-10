@@ -34,18 +34,20 @@
 			    	{% endblock %}
 			    </form>
 
-			    <div id="charts">
-			    	<table border="1">
-			    		<tbody>
-			    			{% for entry in charts %}
-			    				<tr>
-			    					<td>{{ entry.get('trackName') }}</td>
-			    					<td>{{ entry.get('artist') }}</a></td>
-			    				</tr>
-			    			{% endfor %}
-			    		</tbody>
-			    	</table>
-			    </div>
+			    {% if charts %}
+				    <div id="charts">
+				    	<table border="1">
+				    		<tbody>
+				    			{% for entry in charts %}
+				    				<tr>
+				    					<td>{{ entry.get('trackName') }}</td>
+				    					<td><a href="{{ url_for('result', artistName = entry.get('artist')) }}">{{ entry.get('artist') }}</a></td>
+				    				</tr>
+				    			{% endfor %}
+				    		</tbody>
+				    	</table>
+				    </div>
+				{% endif %}
 			{% endblock %}
 		</div>
 

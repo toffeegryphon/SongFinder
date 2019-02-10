@@ -9,7 +9,7 @@ cache = SimpleCache()
 @app.route('/')
 def main():
 
-	charts = songs.getCharts()[0:4]
+	charts = songs.getCharts()[0:10]
 	cache.set('charts', charts)
 
 	return render_template('main.html', charts = charts)
@@ -19,6 +19,7 @@ def result(artistName):
 
 	artistName = artistName
 	print("RESULT CALLED")
+	print(request.form.get('submit'))
 	if request.method == 'POST' or request.method == 'GET':
 		if request.form.get('submit') == 'search' or request.method == 'GET':
 			print("artist: " + artistName)
@@ -32,6 +33,7 @@ def result(artistName):
 				artist = songs.buildArtist(artistName, request.form.get('getAlbum'))
 
 				if request.args.get('track'):
+					##TODO return in correct sorted order based on prior to refreshing
 					artist = songs.upvote(artistName, request.args.get('track'))
 
 				cache.set('mainArtist', artist)
@@ -46,6 +48,26 @@ def result(artistName):
 
 				##result = songs.getSongsByArtist(artistName, request.form.get('getAlbum'))
 				return render_template("main_with_result.html", result = result, relationships = relationships, artistName = artistName)
+
+		elif request.form.get('submit') == 'Sort.VOTES' or request.form.get('submit') == 'Sort.ALPHABETICAL':
+			if request.form.get('submit') == 'Sort.VOTES':
+				sortMethod = songs.Sort.VOTES
+			else:
+				sortMethod = songs.Sort.ALPHABETICAL
+
+			artist = songs.sortRecordings(artistName, songs.ArtistInput.ARTIST_NAME, sortMethod)
+
+			cache.set('mainArtist', artist)
+			result = artist.get('recordings')
+			relationships = []
+			for relationship in artist.get('relationships'):
+				print("Relationship: ", relationship)
+				##TODO Fix Somehow this is None
+				print(artist.get('relationships').get(relationship))
+				relationships.append([songs.getArtistName(relationship), relationship, artist.get('relationships').get(relationship)])
+			print(relationships)
+
+			return render_template('main_with_result.html', result = result, relationships = relationships, artistName = artistName)
 
 		elif request.form.get('submit') == 'relationship':
 			secondName = request.form.get('second')

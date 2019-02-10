@@ -1,22 +1,26 @@
 import os, urllib.request, json, csv
 from unidecode import unidecode
+from operator import itemgetter
+from enum import Enum
 
 BASE_URL = "https://musicbrainz.org/ws/2/"
 QUERY_ARTIST = "lana+del+rey"
 
 def getArtistName(artistId):
     print("Requesting name of %s" % (artistId))
+
     REQUEST_ARTIST_NAME = "%sartist/%s?fmt=json" % (BASE_URL, artistId)
     print(REQUEST_ARTIST_NAME)
     requestArtistName = urllib.request.urlopen(urllib.request.Request(REQUEST_ARTIST_NAME)).read().decode("utf-8")
     artistName = json.loads(requestArtistName).get('name')
+
     return artistName
 
 def getArtistId(artist, numberOfResults = 1):
     ##TODO Check if artist name is same as the one obtained from ID
     print("Requesting %s's artist ID" % (artist))
+
     QUERY_ARTIST = artist.lower().replace(" ", "+")
-    ##REQUEST_ARTIST_ID = BASE_URL + "artist/?query=" + QUERY_ARTIST + "&limit=1&fmt=json"
     REQUEST_ARTIST_ID = "%sartist/?query=%s&limit=%s&fmt=json" % (BASE_URL, QUERY_ARTIST, str(numberOfResults))
     print(REQUEST_ARTIST_ID)
     requestArtistId = urllib.request.urlopen(urllib.request.Request(REQUEST_ARTIST_ID)).read().decode("utf-8")
@@ -27,10 +31,13 @@ def getArtistId(artist, numberOfResults = 1):
         for artist in artists:
             artistIds.update({artist.get('id') : artist.get('name')})
         return artistIds
-
-
     artistId = json.loads(requestArtistId).get('artists')[0].get('id')
+
     return artistId
+
+class ArtistInput(Enum):
+    ARTIST_ID = 1
+    ARTIST_NAME = 2
 
 def getSongsByArtistId(artistId, offset=None, songlist=None):
     ##TODO Fix heroku throws 500 Internal Server Error @ ~ page 12
@@ -39,21 +46,15 @@ def getSongsByArtistId(artistId, offset=None, songlist=None):
         offset = 0
     if songlist == None:
         songlist = []
-    ##print("LENGTH SONGLIST: " + str(len(songlist)))
-    ##artistId = artistId
-    ##REQUEST_SONGS = BASE_URL + "recording?artist=" + artistId + "&limit=100&offset=" + str(offset) + "&fmt=json"
     REQUEST_SONGS = "%srecording?artist=%s&limit=100&offset=%s&fmt=json" % (BASE_URL, artistId, str(offset))
     print(REQUEST_SONGS)
     requestSongs = urllib.request.urlopen(urllib.request.Request(REQUEST_SONGS)).read().decode("utf-8")
     songs = json.loads(requestSongs)
     recordingCount = songs.get("recording-count")
-    ##print(recordingCount)
     songlist.extend(songs.get("recordings"))
     while len(songlist) < recordingCount:
         offset += 100
         getSongsByArtistId(artistId, offset, songlist)
-    ##print("FINISHED WHILE LOOP")
-    ##print(json.dumps(songlist, indent=4))
     else:
         print(len(songlist))
         with open("%s_raw.json" % (artistId), 'w') as songsFile:
@@ -203,7 +204,7 @@ def buildArtist(artistName, getAlbumsOfSongs = False):
         songs = getSongsByArtist(artistName, getAlbumsOfSongs)
 
     ##Build Artist
-    artist.update({"recording-count" : len(songs), "recordings" : songs, "relationships" : {}})
+    artist.update({"recordings-count" : len(songs), "recordings-order" : Sort.ALPHABETICAL.value, "recordings" : songs, "relationships" : {}})
     print(json.dumps(artist, indent = 4))
 
     with open('%s.json' % (artistId), 'w') as artistFile:
@@ -229,7 +230,7 @@ def buildArtistWithId(artistId, getAlbumsOfSongs = False):
         songs = getSongsByArtist(artistName, getAlbumsOfSongs)
 
     ##Build Artist
-    artist.update({"recording-count" : len(songs), "recordings" : songs, "relationships" : {}})
+    artist.update({"recording-count" : len(songs), "recordings-order" : Sort.ALPHABETICAL.value, "recordings" : songs, "relationships" : {}})
     print(json.dumps(artist, indent = 4))
 
     with open('%s.json' % (artistId), 'w') as artistFile:
@@ -304,6 +305,31 @@ def upvote(artistName, trackName):
             return artist
 
     return -1
+
+class Sort(Enum):
+    ALPHABETICAL = 1
+    VOTES = 2
+
+def sortRecordings(artistRep, artistInput, sortOrder = Sort.ALPHABETICAL):
+    print("Sorting recordings of %s by %s" % (artistRep, sortOrder))
+
+    if artistInput == ArtistInput.ARTIST_NAME:
+        artistRep = getArtistId(artistRep)
+
+    with open('./%s.json' % (artistRep), 'r') as file:
+        artist = json.load(file)
+    recordings = artist.get('recordings')
+    recordingsOrder = Sort(artist.get('recordings-order'))
+
+    if sortOrder != recordingsOrder:
+        if sortOrder == Sort.ALPHABETICAL:
+            recordingsSorted = sorted(recordings, key = itemgetter('title'))
+        else:
+            recordingsSorted = sorted(recordings, key = itemgetter('votes'),reverse = True)
+    artist.update({'recordings-order' : sortOrder.value, 'recordings' : recordingsSorted})
+
+    return artist
+
 
 SPOTIFY_BASE = 'https://spotifycharts.com/'
 SPOTIFY_DEFAULT = '%s/regional/global/daily/latest/download' % SPOTIFY_BASE
