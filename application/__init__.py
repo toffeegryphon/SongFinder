@@ -14,11 +14,13 @@ def main():
 
 	return render_template('main.html', charts = charts)
 
-@app.route('/<artistName>', methods = ['POST', 'GET'])
+@app.route('/search/<artistName>', methods = ['POST', 'GET'])
 def result(artistName):
+
+	artistName = artistName
+	print("RESULT CALLED")
 	if request.method == 'POST' or request.method == 'GET':
-		if request.form.get('submit') == 'search':
-			artistName = artistName
+		if request.form.get('submit') == 'search' or request.method == 'GET':
 			print("artist: " + artistName)
 			print("getAlbum: " + str(request.form.get('getAlbum')))
 
@@ -28,6 +30,10 @@ def result(artistName):
 				# print(mainArtist)
 
 				artist = songs.buildArtist(artistName, request.form.get('getAlbum'))
+
+				if request.args.get('track'):
+					artist = songs.upvote(artistName, request.args.get('track'))
+
 				cache.set('mainArtist', artist)
 				result = artist.get('recordings')
 				relationships = []
@@ -39,7 +45,7 @@ def result(artistName):
 				print(relationships)
 
 				##result = songs.getSongsByArtist(artistName, request.form.get('getAlbum'))
-				return render_template("main_with_result.html", result = result, relationships = relationships)
+				return render_template("main_with_result.html", result = result, relationships = relationships, artistName = artistName)
 
 		elif request.form.get('submit') == 'relationship':
 			secondName = request.form.get('second')
@@ -67,7 +73,7 @@ def result(artistName):
 
 				print(relationships)
 				cache.set('mainArtist', mainArtist)
-				return(render_template('main_with_result.html', result = mainArtist.get('recordings'), relationships = relationships))
+				return(render_template('main_with_result.html', result = mainArtist.get('recordings'), relationships = relationships, artistName = artistName))
 
 	##TODO Fix bug. Somehow, main_with_result throws error if result is used instead of res
 	return render_template("main.html", res = "Please enter artist")
@@ -76,10 +82,6 @@ def result(artistName):
 # @app.route('/')
 # def resultFromCharts():
 # 	pass
-
-@app.route('/<track>', methods = ['POST', 'GET'])
-def upvote(track):
-	pass
 
 if __name__ == "__main__":
 	app.run(debug=True)

@@ -3,17 +3,33 @@
 {% block form %}
 	{{ super() }}
 
-	<div id="relationship">
+{# 	<div id="relationship">
 		<p>I recommend</p>
     	Artist Name:
     	<input type="text" name="second" value="{{ request.form.second }}">
     	<br>
-    	<input type="submit" name="submit" value="relationship">
-	</div>
+    	<input type="submit" name="submit" value="relationship" onclick="
+    		this.form.action = '{{ url_for('result', artistName = artistName }}';
+    		this.form.action = this.form.action + document.getElementById('artist').value;
+	    	console.log(this.form.action);
+	    	console.log(document.getElementById('artist').value);
+    	">
+	</div> #}
 {% endblock%}
 
 {% block left%}
+
 	{{ super() }}
+
+	<div id="relationship">
+		<form action="{{ url_for('result', artistName = artistName) }}" method="POST" name="searchForm">
+			<p>I recommend</p>
+	    	Artist Name:
+	    	<input type="text" name="second" value="{{ request.form.second }}">
+	    	<br>
+	    	<input type="submit" name="submit" value="relationship">
+		</form>
+	</div>
 
 	{% if relationships %}
 		<div id='extend'>
@@ -33,11 +49,13 @@
 
 {% block content %}
 	
+	<h1>{{ artistName }}</h1>
+
 	<table border="1">
     	<tbody>
     		{% for song in result %}
     			<tr>
-    				<td><a href="{{ url_for('upvote', track=song.get('title')) }}"><button type="submit" value="{{ song.get('title') }}">^</button></td>
+    				<td>{{ song.get('votes') }}<a href="{{ url_for('result', artistName = artistName, track = song.get('title')) }}"><button type="submit" value="{{ song.get('title') }}">^</button></td>
     				<td>{{ song.get('title') }}</td>
     				{% if song.get('album') %}
     					<td>

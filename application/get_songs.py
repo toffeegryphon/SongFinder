@@ -73,7 +73,7 @@ def cleanList(songlist, artistId):
     first.pop("video")
     first.pop("length")
     first.pop("disambiguation")
-    first.update({"title" : unidecode(first.get("title")), "albums" : None})
+    first.update({"title" : unidecode(first.get("title")), "albums" : None, "votes" : 0})
     songlistClean.append(first)
     print(songlistClean)
 
@@ -284,6 +284,26 @@ def addRelationship(secondArtistName, mainArtistName):
         json.dump(secondArtist, secondArtistFile, indent = 4)
 
     return(mainArtist.get("relationships").get(secondId))
+
+def upvote(artistName, trackName):
+    print("UPVOTE CALLED")
+    artistId = getArtistId(artistName)
+    print(artistId)
+    print(artistName)
+    print(trackName)
+
+    artist = buildArtistWithId(artistId)
+    for track in artist.get('recordings'):
+        if track.get('title') == trackName:
+            print("HIT")
+            track['votes'] += 1 
+
+            with open('./%s.json' % (artistId), 'w') as file:
+                json.dump(artist, file, indent = 4)
+
+            return artist
+
+    return -1
 
 SPOTIFY_BASE = 'https://spotifycharts.com/'
 SPOTIFY_DEFAULT = '%s/regional/global/daily/latest/download' % SPOTIFY_BASE

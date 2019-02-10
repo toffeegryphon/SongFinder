@@ -5,6 +5,7 @@
     <title>SongFinder</title>
 
     <LINK REL=StyleSheet HREF="../static/main.css" TYPE="text/css" MEDIA=screen>
+    <link rel="shortcut icon" href="https://s3.amazonaws.com/django-blog/ico/favicon_v2.ico">
     <script type="text/javascript" src="../static/main.js"></script>
   </head>
 
@@ -15,7 +16,7 @@
 			    <h1> Find songs by artist </h1>
 			    <p> Using musicbrainz API. </p>
 
-			    <form action="{{ url_for('result', artistName = artistName) }}" method="POST" name="searchForm">
+			    <form action="{{ url_for('result', artistName = '') }}" method="POST" name="searchForm">
 			    	{% block form %}
 			    		<div id="search">
 					    	Artist Name:
@@ -25,9 +26,9 @@
 					    	<input type="checkbox" id="getAlbum" name="getAlbum">
 					    	<br>
 					    	<input type="submit" id="submit" name="submit" value="search" onclick="
-					    	this.form.action = this.form.action + document.getElementById('artist').value;
-					    	console.log(this.form.action);
-					    	console.log(document.getElementById('artist').value);
+						    	this.form.action = this.form.action + document.getElementById('artist').value;
+						    	console.log(this.form.action);
+						    	console.log(document.getElementById('artist').value);
 					    	">
 					    </div>
 			    	{% endblock %}

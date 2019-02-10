@@ -4,13 +4,14 @@
     "recording-count": 37,
     "recordings": [
         {
-            "title": "All My Love",
             "id": "53044f2e-74cb-4dd7-86c3-2059fce01643",
-            "albums": null
+            "title": "All My Love",
+            "albums": null,
+            "votes": 5
         },
         {
-            "id": "061ddad1-9206-4cbc-bea4-61e67461adce",
             "title": "Angry Hill",
+            "id": "061ddad1-9206-4cbc-bea4-61e67461adce",
             "albums": null,
             "votes": 0
         },
@@ -21,14 +22,14 @@
             "votes": 0
         },
         {
-            "id": "2085af4b-e896-4c68-a2f0-777f4d9f816e",
             "title": "Benjamin Twine",
+            "id": "2085af4b-e896-4c68-a2f0-777f4d9f816e",
             "albums": null,
             "votes": 0
         },
         {
-            "id": "3135bca6-0dbd-4997-b6dc-cbb20a9df7c8",
             "title": "Blame It on Me",
+            "id": "3135bca6-0dbd-4997-b6dc-cbb20a9df7c8",
             "albums": null,
             "votes": 0
         },
@@ -39,14 +40,14 @@
             "votes": 0
         },
         {
-            "id": "867283ce-ff08-49f2-9c2a-db589c4ac3ee",
             "title": "Breakaway",
+            "id": "867283ce-ff08-49f2-9c2a-db589c4ac3ee",
             "albums": null,
             "votes": 0
         },
         {
-            "title": "Budapest",
             "id": "17f6b094-2ff1-4787-94eb-3ace028fadc6",
+            "title": "Budapest",
             "albums": null,
             "votes": 0
         },
@@ -57,20 +58,20 @@
             "votes": 0
         },
         {
-            "id": "187328eb-ca0d-428c-8a93-7b482e419a4c",
             "title": "Coat of Armour",
+            "id": "187328eb-ca0d-428c-8a93-7b482e419a4c",
             "albums": null,
             "votes": 0
         },
         {
-            "id": "51a6e64c-cb11-479a-8651-290a0f765f6b",
             "title": "Da Vinci Riot Police",
+            "id": "51a6e64c-cb11-479a-8651-290a0f765f6b",
             "albums": null,
             "votes": 0
         },
         {
-            "title": "Did You Hear the Rain",
             "id": "ff3a5b76-b65f-40a7-b71b-0913f572fe32",
+            "title": "Did You Hear the Rain",
             "albums": null,
             "votes": 0
         },
@@ -99,8 +100,8 @@
             "votes": 0
         },
         {
-            "title": "Get Away",
             "id": "3ff6cb7b-37b6-403e-9341-2c1ce9cd2422",
+            "title": "Get Away",
             "albums": null,
             "votes": 0
         },
@@ -129,20 +130,20 @@
             "votes": 0
         },
         {
-            "id": "5227daa6-d14b-431d-b348-ac90bc0a2206",
             "title": "Leaving It Up to You",
+            "id": "5227daa6-d14b-431d-b348-ac90bc0a2206",
             "albums": null,
             "votes": 0
         },
         {
-            "title": "Listen to the Man",
             "id": "39cb6e94-d3d2-4731-a0ea-3dd22959c871",
+            "title": "Listen to the Man",
             "albums": null,
             "votes": 0
         },
         {
-            "title": "Only a Human",
             "id": "593e4358-8b01-44ce-b058-9592210264b2",
+            "title": "Only a Human",
             "albums": null,
             "votes": 0
         },
@@ -153,20 +154,20 @@
             "votes": 0
         },
         {
-            "id": "0181d743-d473-445b-831d-50112011b9f1",
             "title": "Paradise",
+            "id": "0181d743-d473-445b-831d-50112011b9f1",
             "albums": null,
             "votes": 0
         },
         {
-            "id": "8621f1f4-55e4-4885-8c60-fa36c8f80efb",
             "title": "Pretty Shining People",
+            "id": "8621f1f4-55e4-4885-8c60-fa36c8f80efb",
             "albums": null,
-            "votes": 0
+            "votes": 1
         },
         {
-            "id": "2eedf91c-b062-409f-b633-593a721622ce",
             "title": "Saviour",
+            "id": "2eedf91c-b062-409f-b633-593a721622ce",
             "albums": null,
             "votes": 0
         },
@@ -183,8 +184,8 @@
             "votes": 0
         },
         {
-            "title": "Spectacular Rival",
             "id": "1b895642-b223-4d08-9e8b-af90231a0ac9",
+            "title": "Spectacular Rival",
             "albums": null,
             "votes": 0
         },
@@ -207,8 +208,8 @@
             "votes": 0
         },
         {
-            "id": "396def1b-9265-4781-bdf9-7a004f27eea8",
             "title": "The Story of the Ezra Express",
+            "id": "396def1b-9265-4781-bdf9-7a004f27eea8",
             "albums": null,
             "votes": 0
         },
