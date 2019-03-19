@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 from werkzeug.contrib.cache import SimpleCache
 import application.get_songs as songs
 
@@ -13,6 +13,10 @@ def main():
 	cache.set('charts', charts)
 
 	return render_template('main.html', charts = charts)
+
+@app.route('/search')
+def redirMain():
+	return redirect(url_for('main'))
 
 @app.route('/search/<artistName>', methods = ['POST', 'GET'])
 def result(artistName):

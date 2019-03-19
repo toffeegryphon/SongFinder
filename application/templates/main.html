@@ -11,28 +11,34 @@
 
   <body>
   	<div class="row">
-  		<div class="column">
+  		<div class="column" id="interface">
   			{% block left %}
-			    <h1> Find songs by artist </h1>
-			    <p> Using musicbrainz API. </p>
+  				{% block title %}
+			    	<h1> Find songs by artist </h1>
+			    {% endblock %}
+
+			    <br>
 
 			    <form action="{{ url_for('result', artistName = '') }}" method="POST" name="searchForm">
 			    	{% block form %}
 			    		<div id="search">
-					    	Artist Name:
+					    	Artist:
 					    	<input type="text" id="artist" name="artist" value="{{ request.form.artist }}">
-					    	<br>
+					    	{# <br>
 					    	Get Albums Songs appear in?
 					    	<input type="checkbox" id="getAlbum" name="getAlbum">
-					    	<br>
+					    	<br> #}
 					    	<input type="submit" id="submit" name="submit" value="search" onclick="
 						    	this.form.action = this.form.action + document.getElementById('artist').value;
-						    	console.log(this.form.action);
-						    	console.log(document.getElementById('artist').value);
+/*						    	console.log(this.form.action);
+						    	console.log(document.getElementById('artist').value);*/
 					    	">
 					    </div>
 			    	{% endblock %}
 			    </form>
+
+			    <br>
+			    <br>
 
 			    {% if charts %}
 				    <div id="charts">
@@ -58,4 +64,8 @@
 	    </div>
 	</div>
   </body>
+
+  <footer>
+  	<p> Using musicbrainz API. </p>
+  </footer>
 </html>

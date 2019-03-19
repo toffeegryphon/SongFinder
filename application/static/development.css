@@ -1,0 +1,17 @@
+.row {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.column {
+	padding: 50px;
+}
+
+#search {
+	background-color: yellow;
+}
+
+#relationship {
+	background-color:  cyan;
+}

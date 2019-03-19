@@ -1,33 +1,23 @@
 {% extends "main.html" %}
 
+{% block title %}
+	<h1>Songs by {{ artistName }}</h1>
+{% endblock %}
+
 {% block form %}
 	{{ super() }}
-
-{# 	<div id="relationship">
-		<p>I recommend</p>
-    	Artist Name:
-    	<input type="text" name="second" value="{{ request.form.second }}">
-    	<br>
-    	<input type="submit" name="submit" value="relationship" onclick="
-    		this.form.action = '{{ url_for('result', artistName = artistName }}';
-    		this.form.action = this.form.action + document.getElementById('artist').value;
-	    	console.log(this.form.action);
-	    	console.log(document.getElementById('artist').value);
-    	">
-	</div> #}
 {% endblock%}
 
 {% block left%}
-
 	{{ super() }}
 
 	<div id="relationship">
 		<form action="{{ url_for('result', artistName = artistName) }}" method="POST" name="searchForm">
-			<p>I recommend</p>
-	    	Artist Name:
+			I think
 	    	<input type="text" name="second" value="{{ request.form.second }}">
+	    	has similar music.
 	    	<br>
-	    	<input type="submit" name="submit" value="relationship">
+	    	<button type="submit" name="submit" value="relationship">Recommend</button>
 		</form>
 	</div>
 
@@ -36,6 +26,9 @@
 			<p>People also recommend</p>
 			<table border="1">
 				<tbody>
+					<tr>
+						<td>Artist</td>
+						<td>Votes</td>
 					{% for artist in relationships %}
 						<tr>
 							<td>{{ artist[0] }}</td>
@@ -48,9 +41,6 @@
 {% endblock %}
 
 {% block content %}
-	
-	<h1>{{ artistName }}</h1>
-
 	<table border="1">
     	<tbody>
     		<form action="{{ url_for('result', artistName = artistName) }}" method="POST" id="sortTracks">

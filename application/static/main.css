@@ -1,3 +1,30 @@
+body {
+	background-color: #1A1A1D;
+	color: white;
+}
+
+footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 50px;
+	width: 100%;
+}
+
+h1 {
+	color: #C3073F;
+}
+
+a {
+	color: #C3073F;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #950740;
+	font-weight: bold;
+}
+
 .row {
 	display: flex;
 	justify-content: center;
@@ -8,10 +35,11 @@
 	padding: 50px;
 }
 
+#interface {
+}
+
 #search {
-	background-color: yellow;
 }
 
 #relationship {
-	background-color:  cyan;
 }
