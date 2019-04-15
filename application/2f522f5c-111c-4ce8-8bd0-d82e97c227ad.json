@@ -1,0 +1,2301 @@
+{
+    "artistId": "2f522f5c-111c-4ce8-8bd0-d82e97c227ad",
+    "artistName": "Daddy Yankee",
+    "recordings-count": 382,
+    "recordings-order": 1,
+    "recordings": [
+        {
+            "title": "2 mujeres",
+            "id": "73211086-7a7b-4764-99ef-cd711f28dddb",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "90d255b3-2088-495a-a01a-02b110a30ba6",
+            "title": "30/30",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "565662bc-f95e-40a7-ad57-a586eeecbad8",
+            "title": "6 de enero",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "3c4946f8-4a74-4bc3-a508-140c1c359f45",
+            "title": "A donde voy",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "A fuegote",
+            "id": "a9de73b2-9ff6-4fd5-a667-155056ad8019",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "cc387cef-d490-44b9-a692-8946738a7011",
+            "title": "A lo cl\u00e1sico",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "A que no te atreves",
+            "id": "a4ec505d-35b4-444c-8395-528dd8638096",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "A romper la disco",
+            "id": "d914ba85-ca7b-4f6d-84b8-2840c8cec149",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Adictiva",
+            "id": "0da80f06-7a9f-4da1-a871-5cbf5b464366",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "8ed4e055-83b8-4864-8b3f-549a54591b57",
+            "title": "Adictos al dinero f\u00e1cil",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "After Party",
+            "id": "7ffd82e7-878f-45e2-937a-d2db519538e9",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "1aa134dd-9de8-4782-b2d5-bd1d47343bad",
+            "title": "Agresivo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "2bdb251b-b1da-4161-8f0f-12ff66ebfb9e",
+            "title": "Al son del boom",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Algo musical",
+            "id": "727399bb-a219-45dd-9ed2-5893c51e1811",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Alguien de la calle",
+            "id": "e97e430b-a3ba-43b5-8ad7-289e42b971e8",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Andas en mi cabeza",
+            "id": "e01e3276-9cf1-48af-b0e3-9f0affa2e64e",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "7210b456-d06f-4a61-b16c-d799ab5073e0",
+            "title": "Aprovecha",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Aqu\u00ed esta tu caldo",
+            "id": "1a6b71ae-4896-4cfd-bc4f-b904622495e6",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "44e4c6f4-c21d-46c7-8be5-2e8120ae23c7",
+            "title": "Asesina [Remix]",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Azukita",
+            "id": "20839d12-d2b0-4945-903a-57f6186f838b",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "BPM",
+            "id": "b603b0a1-c8fe-4f26-b86e-725460b5c0ce",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Baby",
+            "id": "78364b4b-1246-4c98-b3c6-ee0c802f2ffd",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Baila girl, todo hombre llorando por ti",
+            "id": "8a93f45e-cd52-4aac-9e2f-abb6b39b7e78",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "8ed4388b-4862-4561-aa6e-5fdb5fd5d7c7",
+            "title": "Bailando Fue",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "861c5db5-c557-48c6-af3f-45119189d16a",
+            "title": "Beb\u00e9",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "ccdcdbe0-c69c-442f-8b38-405469835b91",
+            "title": "Bella y sensual",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Bien c\u00f3modo",
+            "id": "585be130-8079-46b7-acb2-aad054cea17d",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Block Party",
+            "id": "cc3574ed-5162-4273-a0bb-70e85ffe9860",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Boom Boom",
+            "id": "63820125-8132-4443-af08-ecba0daf4b60",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Born to Rule",
+            "id": "d897adc1-1846-4c58-88bd-e7499beff87a",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Bring It On",
+            "id": "6d3b60b8-11bc-46cb-af96-7ba25d5b4882",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Brugal",
+            "id": "ff71000d-3169-408c-9536-3bf491df3f55",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "a32d2a7e-37ba-497c-aefe-a2f030f570e0",
+            "title": "Buena vida",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Buenos tiempos",
+            "id": "9c6509d9-ed53-4ecb-addd-b03bad2647b9",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Busca una yale",
+            "id": "784c39cd-3c38-43fa-9000-40e94c154bf5",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Buscarte",
+            "id": "671186fa-0c27-4a69-a90a-5f91880a0ab2",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Cacer\u00eda de nenotas",
+            "id": "7ab5e14b-9362-4db7-a3fb-be928472cae5",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Caile",
+            "id": "fb3323cf-98c9-4e40-8837-4c84bff31127",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Calent\u00f3n",
+            "id": "2f0011ee-9e06-4a5d-8929-019f45e0b0d0",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Calibre de m\u00e1s poder",
+            "id": "ad316689-1602-4f8a-85ee-a6929fd2a7fb",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Calibre m\u00e1s poder",
+            "id": "e5a245ef-69a3-487a-ab8d-25cfe578f930",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Caliente",
+            "id": "d6b66ec1-bd3c-499f-8be4-3f0110ea5e9c",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Cambio",
+            "id": "deffd132-5fff-4703-a269-612b41fda3b5",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Camoflauge",
+            "id": "8839775f-f72f-49e8-afa7-68b14d9f6d2f",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Campeo a mi manera",
+            "id": "ce9ddaaf-80fd-47c2-9d2c-e684a392289b",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "cea447cc-df37-4538-8209-39e85ca16bd1",
+            "title": "Camuflash",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "b68d50c5-16af-4fdb-9540-6d82decf60e9",
+            "title": "Cara de payaso",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Cartel Mix",
+            "id": "d5ffaf07-810b-4c32-a4af-c45036afd926",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "3f382f77-2e12-42ae-9c1c-51ad7731c872",
+            "title": "Chequea c\u00f3mo se siente",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Chica interesada",
+            "id": "e24db802-57d8-4543-8a93-bb57f2c56ed4",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Ciencia callejera",
+            "id": "6242c694-e6a2-471d-9c06-b28038eb12d8",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Cierra los ojos",
+            "id": "df6fe143-89f0-44a0-90fc-37f47c994607",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "62979964-e05d-4b46-b1d4-5427d7d7ddc7",
+            "title": "Cojela que va sin jockey",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Come y vete",
+            "id": "fc56dc58-d81b-4c37-ba67-2b17b8492aed",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Comienza el bellaqueo",
+            "id": "f74cb686-b18d-4f57-ad45-c45a60da44e3",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "b10fe531-e8ac-47ab-a537-4e5414f187f7",
+            "title": "Como dice que dijo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "2f115339-0ed6-4e5f-a272-ca45afc5e301",
+            "title": "Como soy",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Como y vete",
+            "id": "099c9dc9-7cb2-4cb3-b591-4d7a7fe1b25d",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "f7804162-6ca7-4f8e-8bdf-029b6636f29e",
+            "title": "Con calma",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "41819d5c-717d-48c7-9c2b-0c689ba42649",
+            "title": "Conserva tu figura",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Controlando el \u00e1rea",
+            "id": "96ba1eef-496b-4c7a-8161-b1acee92be9b",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "a33b63b6-d347-488c-b9a6-1485fbe9962f",
+            "title": "Coraza divina",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Corazones",
+            "id": "0213007b-7e42-4f50-9fd4-3a8d94ae643a",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "65b52ecb-763f-4810-9bcc-54521c298c7b",
+            "title": "Corrupto oficial",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Cuchi",
+            "id": "7c68810b-a205-4f23-8e82-6cd05b0b19a4",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Cu\u00e9ntame",
+            "id": "32d0725e-2ef4-4a43-98a0-0c6e50f56713",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "56f83e9a-0780-4a7e-9abc-1ca17bce5e17",
+            "title": "C\u00f3gela que va sin jockey",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Dale duro sex",
+            "id": "7f2b9acf-63de-4897-a353-ced44f468f38",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Dale hasta abajo",
+            "id": "e0fafaf9-2db8-4ae4-8ed9-0f82c7b03301",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Dale un latigazo",
+            "id": "decde900-aa28-4b16-91df-390455d02f74",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Dan de Dan",
+            "id": "4e57fb51-fdcf-46ea-9acc-6e7d5feaccf8",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "1efc9048-bb49-4148-b5e6-92534af0f0cb",
+            "title": "Danza Kuduro",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "53237f9e-b2e5-4998-b1ef-e7ea9341353c",
+            "title": "Daria",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "De la paz y de la guerra",
+            "id": "87063a95-cd70-4cfa-9f01-370ffdabf03b",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Desaf\u00edo",
+            "id": "51dcd476-e6d5-4830-9fdb-4b5ef20a3e79",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Descontrol",
+            "id": "3f246c3c-d8ce-4d65-9f26-abc65147e947",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "1109d8da-ce4a-4739-9414-242dc3e9b81c",
+            "title": "Despacito",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Devu\u00e9lveme tu coraz\u00f3n",
+            "id": "daf2ebaa-42ea-4a2d-923b-8d2583dd80cf",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "d8bdc5ad-5dbb-42b8-8869-508286bfa180",
+            "title": "Dime cu\u00e1ndo y d\u00f3nde",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "e1a0963d-0e8c-49a7-bc6e-caa0a3267f7a",
+            "title": "Dime qu\u00e9 paso",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "4b98277a-249f-447f-bfcd-2a495bbcb262",
+            "title": "Donde est\u00e1n las giales",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "e9273150-db8a-4fc7-a74b-80a4775d046e",
+            "title": "Donde hubo fuego / Pa'tr\u00e1s, pa'lante",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "06bb5619-59d6-4506-8079-8ef946d290ad",
+            "title": "Donde mi no vengas",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Drop It on Me",
+            "id": "20289bb8-8d51-4325-b3f9-1c3e489ee174",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Dura",
+            "id": "2fe42af5-91a2-4b1c-a8eb-bee795fe17bd",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "c9890aa4-c4f6-4b12-8d76-fd8de9769f86",
+            "title": "D\u00e9jala caer",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "109cbc5d-9cfb-47b6-99d7-ee203cc8c04d",
+            "title": "D\u00edmelo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "ae1e4315-7476-4401-ad9f-f590056ca0ce",
+            "title": "D\u00f3nde es el party",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "775b7a22-b523-4f53-a73d-e5a1d6369dfd",
+            "title": "D\u00f3nde est\u00e1n las gatas",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "El Nockout",
+            "id": "9e6da2d2-f08a-4615-ac38-869e38042d42",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "El amante",
+            "id": "9bab6a48-a631-4ad5-81d5-63fd6abcf3af",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "El cangri",
+            "id": "d832ef1c-dca5-4b27-a370-94e33a1aadc7",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "42b321bb-8b9b-4b13-b27d-3c9c0797957a",
+            "title": "El celular",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "El combo me llama",
+            "id": "e01677da-2324-4586-aaac-a512569b3dcd",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "El desorden",
+            "id": "4ea39be2-3cb5-46ff-a9f6-eb605e08d4c5",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "07597c5f-0df4-4de9-baf8-f2e30e228968",
+            "title": "El duro",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "El empuje",
+            "id": "01221a72-3f55-4a4e-9b3d-6108fab3f01c",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "El gistro mix",
+            "id": "a8f30408-6211-43fa-b6ad-090dcb7aa223",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "El gran robo",
+            "id": "0f5ad241-538f-431f-8615-42c9f99f9b18",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "El latigazo",
+            "id": "209aa891-5e50-4801-94b0-64555280baaf",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "El mejor de todos los tiempos",
+            "id": "c067d4ff-db00-47a7-be85-5aa8797e4633",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "El muro",
+            "id": "b8d4d75d-0e08-4921-abf1-243822cf7853",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "El m\u00e1s duro",
+            "id": "6fd78906-7607-461b-8e49-5da61dd0a881",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "El party me llama",
+            "id": "7d420c01-467f-4cd8-b0db-1020c55c6326",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "El ritmo no perdona",
+            "id": "0d9cd236-a557-4591-b1f2-a08098fbb5f6",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "a101d2b1-a193-4013-84f4-b3781ea4d147",
+            "title": "El truco",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "El tr\u00edo",
+            "id": "b360bb0f-0f08-4f9d-af4d-c2f98aa6a499",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "5aeaa5b5-4cc3-44b8-a558-35fcb793b6dc",
+            "title": "Ella est\u00e1 soltera",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Ella me levant\u00f3",
+            "id": "61f6237c-3ac3-478c-a62d-fefdb1f49c82",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "En directo",
+            "id": "c1b19506-0eb5-41d6-9db0-75d7cb6fd289",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "a6aa2387-0fc8-437d-bbff-f668bdf424bf",
+            "title": "En la cama",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "652da928-1f14-4d7b-a295-e8eba050dc6e",
+            "title": "En sus marcas listos fuera",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Enciende",
+            "id": "37d0c9df-9038-44c8-a8d4-80804d92d2d6",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "dd8fd762-1c4d-4a1a-bc78-1b821cb22831",
+            "title": "Entre t\u00fa y yo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Eres t\u00fa",
+            "id": "a3fba1ca-7003-4e0d-9305-bf10093d46f8",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "ac0a5446-1a55-48a6-93ea-6e47050b0e6d",
+            "title": "Est\u00e1n locos",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Est\u00e1s aqu\u00ed",
+            "id": "eb95bbf5-e437-492b-983a-21d8d9407773",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "48bb04fa-648e-45d8-9440-e0fd8d792353",
+            "title": "Experimentan la perse",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Explosi\u00f3n",
+            "id": "4eda8b33-cfab-4a30-9e73-1081bd5ee2b9",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "bbda50f0-5eaa-4e99-a443-d0c435611f11",
+            "title": "Fiel amiga",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "5a566cda-f32f-47d8-986c-de4115fe9c56",
+            "title": "Finally Found You",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "e4a2a3f1-e7ce-4d7a-9030-7d6d33c3c930",
+            "title": "Flow gansteril",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Forma De Bailar",
+            "id": "5c1b9280-5d23-4b45-8438-7646f52be0d4",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Freestyle",
+            "id": "feb3cbdc-1cf6-489c-a2c1-876066e28409",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "f83d0e71-0118-42e2-a3c2-d76ed8d65a05",
+            "title": "Fronteamos porque podemos",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "9f00254d-d9e4-41e8-963b-43b1011f2ec4",
+            "title": "Fuera de control",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "d16505d8-3558-4129-90cb-598341421b1d",
+            "title": "Fundan el coco",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "333bcdbd-e9cc-4d29-92a4-11a01ad753f9",
+            "title": "Gangsta",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Gasolina",
+            "id": "129252c4-934b-4747-9eea-916f2e7666ea",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Gata gangster",
+            "id": "3292b35b-2e12-479c-b9d1-ec3448fa43dd",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "ab22c819-c1ed-43e8-a8b8-8ebfc796d0f8",
+            "title": "Gata salvaje",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Gatas, bocinas y bajo",
+            "id": "2b257cd1-f44c-4e97-9a8d-99d9ee8a2cde",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "17bc4c93-3ed7-421e-af10-4814cc57036a",
+            "title": "Gazolina",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Ginza",
+            "id": "7cd9a87c-601d-48d3-b0fc-5a3f5b702886",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Golpe de estado",
+            "id": "ea9f26b3-6e92-49b1-86b5-bd5225f15ea7",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Grito mundial",
+            "id": "32ee0f5b-895c-4e25-bbb2-1de8631fbd4f",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Guaya",
+            "id": "8ff4d11f-5673-40b1-bc90-5bc645d1331f",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "fb8d0bfb-7d7e-43ec-a56e-e4fbad00c6b2",
+            "title": "Guillao",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "1e2f2bed-04a4-4509-8eaa-96666b8d57b9",
+            "title": "Gyal You a Party Animal",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "758b4486-29aa-4b1e-89a8-a57378a4b87d",
+            "title": "Hasta el amanecer [The remix]",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Havana",
+            "id": "8e940836-14d0-4b5b-a14d-4ae05c89b3fc",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "59ca1496-3817-4184-81f6-d45900c43e47",
+            "title": "Hielo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "4fbcdbb8-b7ad-4f1a-840d-476e07fe27e1",
+            "title": "Hoy",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Hula Hoop",
+            "id": "f9fe1463-d44b-4207-a0e7-916b82e15201",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "4c3a9e67-3c2c-4ca8-a213-69008e6e0ef3",
+            "title": "Igual que ayer",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "129e332f-3bbd-4d90-bc12-0064da4fbe51",
+            "title": "Imagin\u00e1ndote",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "1b67c17d-4619-4355-b1e2-581f63c82b61",
+            "title": "Impacto",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "7820e960-2f48-47fc-9490-a6630c05e1d6",
+            "title": "Infinito",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "c81b232b-062e-4bf2-ab4c-6e34b7c69692",
+            "title": "Inolvidable",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Interlude",
+            "id": "9079329e-f286-4895-a201-e0f1624e3715",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "4a464f6a-74dc-4202-92d9-4255c548bbe5",
+            "title": "Intermedio \"Gavil\u00e1n\"",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Intro",
+            "id": "7ea3312e-0b02-45f2-bc7a-049171cea25e",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "f76d591c-12c2-4eee-921b-7bcc5dcdc693",
+            "title": "I\u2019m the Boss",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "bd848ad3-854d-4231-8d47-f4e68ab164ba",
+            "title": "Jefe",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "dc4c90fc-29fd-45ea-a757-a9b87cac6234",
+            "title": "Junto al amanecer",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "361f83c4-09dd-406f-b2fe-098efeb0fb72",
+            "title": "K-ndela",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "King Daddy",
+            "id": "7c70c772-19a7-4a1c-936b-43d860d6ebb3",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "f472e40c-0adc-48ed-94ee-ae09ed9a9228",
+            "title": "King Yankee",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "e76daea7-d685-40f3-9476-0e2282d56cc1",
+            "title": "La Nueva Y La Ex [feat. DJ Kadel]",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "bb1be4c2-8a52-46a1-9cad-d6a273b1584d",
+            "title": "La calle me hizo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "ac85f504-bcc9-48fd-a189-ce711c2684b1",
+            "title": "La calle moderna",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "ba25e8a5-87b1-4f15-a73b-39374312a22e",
+            "title": "La despedida",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "4705d598-c971-4a07-90a3-e77863583826",
+            "title": "La dupleta",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "4407c8c2-0d1a-4931-9fec-15574011ea6c",
+            "title": "La fuga",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "La f\u00f3rmula",
+            "id": "87de2fee-dcd3-4cfa-885f-2e00c3005236",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "49bfeff2-5f46-46e5-996a-73911471591a",
+            "title": "La matadora",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "84f21019-6650-4be4-8f70-8941e538c755",
+            "title": "La misi\u00f3n",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "b29cdbcb-649c-474a-b0b3-0393c984f4ab",
+            "title": "La m\u00e1quina de baile",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "90b96709-f39f-411d-baa6-3b9b07ccbe5d",
+            "title": "La noche de los dos",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "9f65ba9b-4e2b-4bdd-b33d-91e99adbffe4",
+            "title": "La noche est\u00e1 buena",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "La ocasi\u00f3n",
+            "id": "a3b668c5-7ee1-4724-bbf7-19b1f3a7bb81",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "2f42183e-b69a-44db-89c6-67de0f2b11ad",
+            "title": "La pregunta",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "La rompe carros",
+            "id": "0386209b-3bdb-41ec-8255-e57c483d451b",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "a19fd065-5bc5-40fe-88bd-9016dd08d8c1",
+            "title": "La se\u00f1al",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "6d178150-b182-4809-ae06-c0002fffac77",
+            "title": "La soledad",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Las 9 plagas",
+            "id": "80228590-8096-4495-b4e5-d7c57aebba33",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "644da61e-73db-4153-bfba-857562ada20b",
+            "title": "Le gusta a la mujer",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "1e390f23-bd25-4ef7-9a1b-893c347af005",
+            "title": "Like You",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "a770e314-1116-4716-98c3-37c3f41c4a12",
+            "title": "Limbo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Llamado de emergencia",
+            "id": "cec0d91b-71aa-427a-9755-3fbd036aa123",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "6e35b13c-45c4-4b8f-be62-306bb80b5672",
+            "title": "Llegamos a la disco",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "06e6e3cd-0aa6-41eb-b87e-cc5da5c328e9",
+            "title": "Llevo tras de ti",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "f6aec70c-1101-4d05-9d6f-00b0c139c0ce",
+            "title": "Ll\u00e9gale",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "ee8e1969-118e-43ba-b448-1f0e6ac70a35",
+            "title": "Lo nuestro se fue",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "a58ac859-8f89-4653-bafc-a6c0ac1f582e",
+            "title": "Lo que paso paso",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Los cangris",
+            "id": "8240a731-d651-4039-bda3-ad4f4c17f0c9",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Lose Control",
+            "id": "87726707-8b32-4980-963e-51a5b0e949a8",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "80541c04-ff69-49fb-aac4-c204d7f53282",
+            "title": "Lovumba",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "L\u00edrica real",
+            "id": "44e63d8f-8624-4179-b1c3-a6be1d5f2ff4",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "5c36beb8-a35e-41f2-a784-331e5dd0ca45",
+            "title": "Machete",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "21e98f46-a99c-400b-8356-0801801b726c",
+            "title": "Machucando",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Made for Now",
+            "id": "2f6f7975-fb9e-403e-810c-1730f4ae1691",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Mamacita",
+            "id": "5d6b6341-1ea6-46ca-b22f-0c1c9d883464",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Mayor que yo",
+            "id": "409ddf20-d28d-43fb-b9b2-438d4d4149d5",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Ma\u00falla",
+            "id": "5aa0688d-f417-4483-a5e9-fc80cac6c35c",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "4ad61084-cc78-4582-b899-2e5ef47fd59c",
+            "title": "Me enter\u00e9",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Me la explota",
+            "id": "7c825d1b-bc9c-4436-97d1-49e45bab6066",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "64753192-daf0-4256-9b8b-f9b998e2de6a",
+            "title": "Me matas",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "9c5e6653-5478-42b0-a408-92b03b53bcb3",
+            "title": "Me quedo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Medley oh ah",
+            "id": "d0a946d3-db2b-4f25-a0a9-d6744b37b327",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "6963de2b-e987-43df-8e81-b6090d97ec37",
+            "title": "Mejor que tu ex",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "22244799-f1f0-4e57-a07b-99343dfd9e2d",
+            "title": "Mensaje de estado",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "58a69523-b898-4e6f-bf7a-a3e4f4e0e14b",
+            "title": "Mente y coraz\u00f3n",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Mi fan\u00e1tico",
+            "id": "a8489291-6ae8-4de4-8e4d-0db5a28cdf70",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "3b213f72-1528-4aa9-a22d-badc885be0bc",
+            "title": "Mi gata y yo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Mi gatita & yo",
+            "id": "56ed30ef-d722-4e32-8f01-547c2f57b76c",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "a2e815a5-82fc-442d-963a-9946039ace1c",
+            "title": "Mil problemas",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Millonarios",
+            "id": "34d00e66-7888-4ca8-a84a-42b2646ec8c8",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "825f73ae-136f-4515-818f-2a3775901cf1",
+            "title": "Mintiendo con la verdad",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Mis d\u00edas sin ti",
+            "id": "0dd5159d-57b6-4876-ad5c-868562fa7e32",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Miss Independent",
+            "id": "df198dce-c4c1-4a26-ad94-81b26595a142",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "84b053a8-abe8-4551-8fb9-243b117207eb",
+            "title": "Miss Show",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "521670a4-f47a-4243-ac75-cb814e02bc6d",
+            "title": "Mix Rap 1",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Mix Rap 2",
+            "id": "1589b4be-de69-42d0-bc93-3dde54df54d8",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "More Than Friends",
+            "id": "74dfc825-cf16-4493-858b-f1b615dcc015",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Mucha soltura",
+            "id": "9366d86a-93eb-4096-bc8e-9902e0ded8b5",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Mu\u00e9vete y perrea",
+            "id": "4b449604-294a-473c-ab1c-32ada4ff43bc",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "M\u00e1s que un amigo",
+            "id": "b687cd79-6eb5-470d-9ef7-6903ec03c763",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "144a3fa3-ba4b-4d0f-a40c-b72663657937",
+            "title": "M\u00e9tele con candela",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "81351f25-bbc2-4395-a98c-27075d99f171",
+            "title": "M\u00eda",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "M\u00edrame",
+            "id": "5beada09-d5cc-4d59-976f-e32ca001d614",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "687ddb80-4090-4724-9733-4a3a8d6fc6a9",
+            "title": "M\u00fasica killa",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "3f9288aa-a5a0-43b5-a60c-f43007536fbf",
+            "title": "Nada ha cambiao\u2019",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "72cf4fdc-71f0-4778-9bf7-68d18f144108",
+            "title": "No hace na",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "4dfd388b-73a5-4fe4-a5b5-ee86e3ad855f",
+            "title": "No hay liga",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "daf7246c-ea57-4288-a3b8-0f092e6ed8f6",
+            "title": "No me corre Police",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "5f7bf18f-29d7-425c-805f-f8b57c96c52f",
+            "title": "No me dejes solo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "11b48f51-984c-41e0-81ee-2f4c3c6e2652",
+            "title": "No problema",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "cd84b90d-2dff-4689-b49e-bb55edf4f3ef",
+            "title": "No quiere enamorarse",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "No te canses",
+            "id": "b66efbc0-b075-48b1-b1f4-89410a2e1ce9",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Noche de entierro",
+            "id": "22c22ca0-805a-4c12-9f9e-73cd36797717",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Nos fuimos hasta abajo",
+            "id": "aaf410e3-bc0c-4f78-8257-fc5c65cec075",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "9cc8c2b1-9721-4e78-b76c-058b629fe5ac",
+            "title": "Nos matamos bailando",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Not a Crime",
+            "id": "92a8c32b-0466-4024-9816-e44736f483da",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "1d324340-5454-4fef-93c3-25e1b70085a1",
+            "title": "Nota de amor",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Nuestro amor",
+            "id": "dc049c76-3e10-408a-9aa3-d65d40034736",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Nunca lo olviden",
+            "id": "d863e398-1f38-4aa5-a2ac-e43774d6b793",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "5fd29a1b-c9a3-42a9-a6cf-dcb453a5ed96",
+            "title": "Oasis de fantas\u00eda",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Oh My God!",
+            "id": "b96114a9-c00a-42d4-9c70-21d5b3318950",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "9407f60f-ce0d-419f-9d4c-ef63d34f2b82",
+            "title": "Ora por m\u00ed",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "76b1783f-acf7-4aaa-bc93-bb03343a01b9",
+            "title": "Otra cosa",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Otro amanecer",
+            "id": "94aa8ba0-e7ea-45e1-b48f-6960a7594e7c",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Outro",
+            "id": "875c3c19-b823-499a-846d-ff23bf64a0fe",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "d24fb489-b31c-4425-a01c-a8bd6010ae24",
+            "title": "Oye Mi Canto @",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "6ec6c5be-01fb-4e8c-bc44-c8eab1acb1a7",
+            "title": "P.R. All-Stars",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Pa' eso estoy yo",
+            "id": "ceede3a0-8b8c-443e-a468-ee29400b35af",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Pa' frontiarle a cualquiera",
+            "id": "ce65d40d-88ce-4ccb-9cfd-9167f3dc40f3",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Pa-kum-pa!!",
+            "id": "e28ee646-a6c9-4742-92ea-ca4ec82e3ac3",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Pakas de 100",
+            "id": "5a93a367-935f-44ec-b384-00cce68f4f53",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "4a39ba7d-de96-4cb8-b7ce-6b132c93be71",
+            "title": "Palabras con sentido",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Paleta",
+            "id": "89be1689-22c2-4721-9c8c-5869d80886cc",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "31b6fdfd-9ed5-448e-80f4-3624a6d47693",
+            "title": "Panda",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "2ffe2abe-a22f-41af-9335-6ee4cd983907",
+            "title": "Papi Lover",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Para que bailen",
+            "id": "5d4304bd-f8c5-4eee-a949-e5abb7212349",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Party de Gangster",
+            "id": "6c074187-52a9-46d9-bba5-68c08d3b53f6",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Pasarela",
+            "id": "76388f84-675e-4cc0-a697-52e9e90a9ded",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Pasi\u00f3n",
+            "id": "b693d603-aa7a-46d4-9999-20f5b80998d9",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Pegaito a la pared",
+            "id": "d301d363-2c7b-4718-a272-355739d8c667",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "6ae70053-aefb-4ef1-b954-126e40352e5b",
+            "title": "Peligro",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Perdido por el mundo",
+            "id": "2267464b-d515-403a-8892-02d547fa443a",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Perriando",
+            "id": "a80e188d-ad3e-45af-ba70-c33b982aaeb1",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Perros salvajes",
+            "id": "294e4390-e2a1-4abb-b0f5-97e69a3e78e9",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Pierde los modales",
+            "id": "89b61300-0ba6-4d1c-8c7a-504d29cb9b47",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Pikete",
+            "id": "9eb906ac-5692-42e7-b86a-82217119aac5",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Plane to PR",
+            "id": "59c9af26-af0f-4b1c-9c83-4cff8ad7bbca",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Playero 41",
+            "id": "f5d7d590-e39a-454f-afc1-ec5b5306fd0f",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "352fc8df-8011-4acd-9642-73346539308d",
+            "title": "Po' encima",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "1a4479f7-d702-4c65-8193-5a9ab0dde731",
+            "title": "Pon t loca",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "49686555-2e49-4adf-b3e1-3e81c8c9c68a",
+            "title": "Por la noche",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "0210ca05-4f27-42b9-93ac-5e12db0fa81f",
+            "title": "Pose",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "f8b93b96-add2-4587-84e9-6188aea73ac4",
+            "title": "Posici\u00f3n",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "a3853539-1c52-4211-9122-6f880e35037d",
+            "title": "Probando",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Puerto Rico All-Stars",
+            "id": "4cab11e9-dcc2-4f58-8c92-4ae241db762d",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "6e143f53-e8dc-4173-b7cb-450557801811",
+            "title": "Puerto Rico te la dedico",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Que la enamoren",
+            "id": "72ea7457-2b6d-46f9-a138-7a65d1249fed",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Que se mueran de envidia",
+            "id": "28aa844d-8146-4ed6-b649-e5fe42af523c",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "b2c7926e-ab4b-4661-a808-3fd90673e594",
+            "title": "Que tengo que hacer",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Que vas a hacer",
+            "id": "fff26c3d-0e5f-46e8-b1fe-024302fb3f3f",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "8374968b-7ae6-491c-bcad-ea10d108ee71",
+            "title": "Quiero decirte",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Qu\u00e9 es la que hay",
+            "id": "297736f6-47ca-4a12-8106-fed2dc6c28e4",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "042c0c2e-e27e-4cad-84be-9baa6a1f0754",
+            "title": "Radio Version",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "3b776adc-49b2-468c-a8e5-e658c63ba42d",
+            "title": "Rah Rah",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Rah!",
+            "id": "e1076095-0c45-480c-a2ff-ec8e523baec7",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "864e4e50-f139-4941-915e-ad274078a0a3",
+            "title": "Raza unida",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "e97c079c-f573-4409-b08f-b8cf9fa86817",
+            "title": "Recuerdas",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "cd5a1922-4eaf-4db3-87af-85209d64e20c",
+            "title": "Reggaeton latino",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Rescate",
+            "id": "2970b24b-0302-489b-9b8c-b3c9f3d719dc",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "bcfdc9d3-6889-40e3-9a7b-d52617d11a92",
+            "title": "Ritmo de la calle",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Rompe (remix)",
+            "id": "3ae0ba97-ded0-4696-b040-6be10b836013",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "4142f1ec-13cf-4cbd-8ed6-01c809d98cbd",
+            "title": "Royal Rumble",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "a4690823-1816-4b22-8540-81553b3a5054",
+            "title": "Rumba y candela",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Run Come Follow Me",
+            "id": "cc4ec3a2-bcba-40ea-bc9d-a0018aba81b5",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "R\u00f3mpela",
+            "id": "f05092c1-cc0c-41d0-a70c-b77deb6de6ae",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "9d76d591-1a1b-4cb2-b42d-8a7f919526b0",
+            "title": "Saber su nombre",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "56b66242-c505-42b3-9a6f-638cc3fca267",
+            "title": "Sabor a melao",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Salgo pa' la calle",
+            "id": "efaaa856-0f3b-4179-b734-a1aa4eae3d0d",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Salud y vida",
+            "id": "4afe99a3-51c6-40dc-a55f-41c086d3ee67",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "San Juan Sounds",
+            "id": "db937717-0eda-45e5-82f5-4f297c9ccbfb",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "500a0e0d-e8f1-4d6d-ac76-f290fa869daf",
+            "title": "Santifica tus escapularios",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "0959c07d-4a9b-41db-9de9-9da7ed6359ae",
+            "title": "Saoco",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "615c0556-881d-4b62-be54-0aa77674b9eb",
+            "title": "Se acelera el flow",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "4ac82eab-9221-4a5b-9204-e71904e29321",
+            "title": "Se activaron los anormales",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "0c9e2390-fdd6-46e0-9f9f-868b16fd000f",
+            "title": "Se le ve",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Seguroski",
+            "id": "205cd3f4-2ada-40dd-b133-9ba96739df04",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Segurosqui",
+            "id": "c7944d0e-c581-4bb8-ba68-438112601e99",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Self Made",
+            "id": "5b63b7af-abc5-45a2-8e17-5f111213f5a5",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "735a4976-3575-464c-8b6a-2b152ade2ab9",
+            "title": "Sentirte",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Se\u00f1orita",
+            "id": "7cc0e36e-80bf-4840-a539-6e49d8f11860",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "15d2fe13-5c18-4c61-8ad5-d891bc0d4b4f",
+            "title": "Shaky Shaky",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "8034accc-28ad-44cb-a5be-eba858bdd2d1",
+            "title": "Shout Outs",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "2967ba19-eee3-458a-95ca-0dac180c364d",
+            "title": "Si est\u00e1 Ready",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "e097e99f-fa88-4057-88de-edc07f03ea46",
+            "title": "Si fueras mi gata",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Sigan brincando",
+            "id": "f18c9bb3-656f-460b-b06e-6e6375e2330e",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Sigo algare",
+            "id": "015fe57c-964c-43b3-8348-16d13a23c315",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Sola",
+            "id": "c36e2162-eb59-4ec0-ae68-b135ed2281d9",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "1e56e410-3913-4210-bdbc-e6a423242334",
+            "title": "Soldado",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Somos de calle",
+            "id": "d62a1605-de51-47b5-b437-00184f45e560",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Son las 12",
+            "id": "c2b7d617-ad5e-471d-8c4a-8d9ec923fc19",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Son las doce",
+            "id": "6c7d8c0a-d208-4f67-b46f-d8857ebc0e1a",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "fc04f263-ff02-481f-abb2-7c078ef391ff",
+            "title": "Soy de aqu\u00ed",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "ac0feb60-3775-45b0-8d6d-f7f9a31c2bdb",
+            "title": "Soy lo que soy",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Soy pel\u00f3n, muerte yo le doy",
+            "id": "ce91194d-83b7-473e-9a67-f91ca242d46a",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "97c4ed6c-8bb3-4acd-a767-2401886cc62c",
+            "title": "Soy un problema",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Striper",
+            "id": "102955f4-bca9-4909-bc70-ba38cf781c44",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Suelta",
+            "id": "4fd9c4a2-6eab-4249-9afc-d11e9f966ad0",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Suena boom",
+            "id": "2495416e-8dcf-4495-b031-8142a87deed0",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "5cc7f023-a61e-4e3f-bd66-e63a551077a0",
+            "title": "Suena la alarma",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Switchea",
+            "id": "7e00d67f-a7ff-451e-80b9-84dbfe94c928",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "S\u00e1bado rebelde",
+            "id": "71eb02c3-908e-4737-980f-460e2e7d148e",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "S\u00e1banas blancas",
+            "id": "989f0c04-ff30-4aa3-a1e6-eb58884978d6",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "3c2ddfaf-ae7a-4fac-9db5-3c2a4a9b7c05",
+            "title": "S\u00e1cala",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "35cd705b-2a19-4497-9744-8cfebe139739",
+            "title": "S\u00edgueme y te sigo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "S\u00f3lido",
+            "id": "d4243887-3822-4e1d-8305-253427126b2b",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "ed5b31aa-cb2d-4a15-a78c-a2a1d7daef58",
+            "title": "Taboo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "dbb788f9-3d6d-4286-8a20-208cbffed36b",
+            "title": "Taladro",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Talento de barrio",
+            "id": "3f69a18e-328a-40df-adf2-49801c0e0bdd",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Talento de un barrio fino",
+            "id": "15027745-e1ec-45db-bff4-869580e5cb17",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Temblor",
+            "id": "80b9298c-3a21-4ff5-b0e0-3b03eefd18e3",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "3815df55-7827-45b9-9fb2-7d24fba36ae4",
+            "title": "Tempted to Touch",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Tensi\u00f3n",
+            "id": "872fc27b-813e-4a03-b7b4-6ffda96a0fd5",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "fb7c80e0-8331-4bf5-9196-2bffb638ea46",
+            "title": "The Big Blunt Live",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "The Prophecy",
+            "id": "2f60e183-9bc7-4beb-9c7c-a33db07c3f2d",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "They Cry",
+            "id": "b07f0b8c-c73c-463f-af0d-ef3b00998b26",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "This Is Not a Love Song",
+            "id": "ab40f1b5-0dd6-427d-bd87-97915f31936f",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "0cea8969-4200-45b1-8380-d5f0402cc1ca",
+            "title": "Todo comienza en la disco",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "49468b5b-4be1-4716-85e1-cdc3fc03292d",
+            "title": "Todos quieren a Raymond",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Tremenda sata",
+            "id": "5a8f74dd-0a11-41f2-9785-b1dcdfc7fe0b",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "abbdfbf1-a6d4-414c-9f25-828befc1166e",
+            "title": "Tu hombre",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "b25dea60-307e-479d-839f-376422f1283d",
+            "title": "Tu pr\u00edncipe",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Tumba la casa",
+            "id": "2e76a78c-1141-4cde-a3d5-7f2d015873d5",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "T\u00edrate al medio",
+            "id": "f89f4449-6b6d-460a-9aa7-1d149fc57ae9",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "873df18d-5223-470d-bff2-ad6e43c96bce",
+            "title": "T\u00fa no tienes miedo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Un d\u00eda en el estudio",
+            "id": "2257929d-9aab-45cc-aa6f-75f55526fdc5",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Una nena",
+            "id": "45b2b6d2-8a56-4656-b5a3-d193138d3fe9",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Una respuesta",
+            "id": "ad017dfb-5312-4ced-9775-d696dca91552",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Usa la uzi",
+            "id": "49d04927-d9a1-4123-a9c3-488f0c778b50",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "33a70e55-b5a1-436b-beaf-97d151db2b5b",
+            "title": "Vaiv\u00e9n",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Vamo all\u00e1 mix",
+            "id": "21a7c97a-652e-4327-b635-f9dec91bf688",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "68e4709f-a733-4c84-96e8-2755eb2eeef3",
+            "title": "Vamos pa'la disco",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "a624344a-f368-41e7-82a0-6adbb73bb3c2",
+            "title": "Ven Conmigo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "f45e30db-6553-41d6-a141-7a2d84714525",
+            "title": "Ven d\u00e1melo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "adda5654-04f6-4da3-bd52-7bcbe36f5e77",
+            "title": "Vida en la noche",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Viejas andadas",
+            "id": "a6f4324c-5a35-41ec-9bbf-5d507d73ed80",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "5697f4b7-23af-4c93-8cbd-da06c797c42c",
+            "title": "Wayo Wayo",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "46ce5397-d4e3-4d8a-ae32-4a1e2021a9e8",
+            "title": "We Got a Problem Houston",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "We Wanna",
+            "id": "61ca7ddb-97d3-462b-bb6e-3983cd140fda",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "58dc831c-936b-4e11-a8d1-8f736364dde8",
+            "title": "What U Gon' Do",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "e6cbd4c9-3281-4aaa-945f-c8622af01dc9",
+            "title": "Who's Your Daddy?",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Winchester y el Bambino",
+            "id": "9f19f484-1744-4111-b401-a9e195023cbb",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "8ecbf328-d89c-4375-88cd-eab6ccb65951",
+            "title": "Ya va sonando",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "17303185-657c-4c3a-a241-0abf1c2926b2",
+            "title": "Yamilette",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Yankee Man",
+            "id": "6a143a8f-cac4-490c-8bc5-4f3a024c6ab2",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Yo contra ti",
+            "id": "0190b45f-e593-4798-8de0-2b3546a78853",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "90ca41f5-c270-4cd0-8c61-c589d09b7cd4",
+            "title": "Yo no creo en socios",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Yo s\u00e9 que a ti te gusta",
+            "id": "81883f4f-7b55-41ec-957b-156f5186ac70",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Yo tengo una gata",
+            "id": "374e3c7c-9c54-4664-adeb-c7e454f02a8b",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "Yo voy",
+            "id": "88eb312a-015d-4c21-8436-6606bd1058a3",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "5a277b21-c3fd-44e9-b598-23c5ee1267dc",
+            "title": "Zum zum",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "[untitled]",
+            "id": "1228ca49-87bc-41a3-b1ee-6c63a92d71ec",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "id": "5cd47e6e-58ed-48a2-9fb9-e8504a4b56fe",
+            "title": "\u00a1Qu\u00e9 pas\u00f3!",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "\u00c9chale Pie",
+            "id": "ad6d18b0-7622-4094-819d-2df23b113dd1",
+            "albums": null,
+            "votes": 0
+        },
+        {
+            "title": "\u00c9chale Pique",
+            "id": "ebe4f1ec-e7e2-44f5-b27c-2b09e288e25a",
+            "albums": null,
+            "votes": 0
+        }
+    ],
+    "relationships": {}
+}

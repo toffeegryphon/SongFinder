@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>SongFinder</title>
-
-    <LINK REL=StyleSheet HREF="../static/main.css" TYPE="text/css" MEDIA=screen>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link REL=StyleSheet HREF="../static/main.css" TYPE="text/css" MEDIA=screen>
     <link rel="shortcut icon" href="https://s3.amazonaws.com/django-blog/ico/favicon_v2.ico">
     <script type="text/javascript" src="../static/main.js"></script>
   </head>
@@ -22,16 +23,20 @@
 			    <form action="{{ url_for('result', artistName = '') }}" method="POST" name="searchForm">
 			    	{% block form %}
 			    		<div id="search">
-					    	Artist:
-					    	<input type="text" id="artist" name="artist" value="{{ request.form.artist }}">
+					    	<input type="text" id="artist" name="artist" value="{{ request.form.artist }}" placeholder="Artist">
 					    	{# <br>
 					    	Get Albums Songs appear in?
 					    	<input type="checkbox" id="getAlbum" name="getAlbum">
 					    	<br> #}
-					    	<input type="submit" id="submit" name="submit" value="search" onclick="
-						    	this.form.action = this.form.action + document.getElementById('artist').value;
-/*						    	console.log(this.form.action);
-						    	console.log(document.getElementById('artist').value);*/
+					    	<input type="submit" id="submit" class="btn btn-outline-primary" name="submit" value="search" onclick="
+					    		if (document.getElementById('artist').value != '') {
+					    			this.form.action = this.form.action + document.getElementById('artist').value;
+					    		} else {
+					    			alert('Please enter artist name');
+					    		}
+						    	
+						    	console.log(this.form.action);
+						    	console.log(document.getElementById('artist').value);
 					    	">
 					    </div>
 			    	{% endblock %}
@@ -42,12 +47,12 @@
 
 			    {% if charts %}
 				    <div id="charts">
-				    	<table border="1">
+				    	<table class="table">
 				    		<tbody>
 				    			{% for entry in charts %}
 				    				<tr>
 				    					<td>{{ entry.get('trackName') }}</td>
-				    					<td><a href="{{ url_for('result', artistName = entry.get('artist')) }}">{{ entry.get('artist') }}</a></td>
+				    					<td><a id="artist-name" href="{{ url_for('result', artistName = entry.get('artist')) }}">{{ entry.get('artist') }}</a></td>
 				    				</tr>
 				    			{% endfor %}
 				    		</tbody>

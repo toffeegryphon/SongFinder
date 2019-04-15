@@ -1,6 +1,4 @@
 body {
-	background-color: #1A1A1D;
-	color: white;
 }
 
 footer {
@@ -17,12 +15,14 @@ h1 {
 
 a {
 	color: #C3073F;
+	font-weight: normal;
 	text-decoration: none;
 }
 
 a:hover {
 	color: #950740;
-	font-weight: bold;
+	font-weight: normal;
+	text-decoration: underline;
 }
 
 .row {

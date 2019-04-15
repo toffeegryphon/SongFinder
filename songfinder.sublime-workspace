@@ -11,7 +11,7 @@
 			"file": "application/get_songs.py",
 			"settings":
 			{
-				"buffer_size": 12836,
+				"buffer_size": 14046,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -20,7 +20,7 @@
 			"file": "application/__init__.py",
 			"settings":
 			{
-				"buffer_size": 2759,
+				"buffer_size": 4134,
 				"line_ending": "Windows"
 			}
 		},
@@ -28,7 +28,7 @@
 			"file": "application/templates/main_with_result.html",
 			"settings":
 			{
-				"buffer_size": 1197,
+				"buffer_size": 1941,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -114,7 +114,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12836,
+						"buffer_size": 14046,
 						"regions":
 						{
 						},
@@ -145,7 +145,7 @@
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2759,
+						"buffer_size": 4134,
 						"regions":
 						{
 						},
@@ -174,7 +174,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1197,
+						"buffer_size": 1941,
 						"regions":
 						{
 						},
@@ -190,7 +190,7 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 96.0,
+						"translation.y": 78.4,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

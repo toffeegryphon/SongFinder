@@ -342,7 +342,7 @@ def getCharts():
     requestCharts = urllib.request.urlretrieve(SPOTIFY_DEFAULT, 'charts.csv')
 
     #TODO Most likely can be removed
-    with open('charts.csv', 'r') as file, open('charts_clean.csv', 'w') as output:
+    with open('charts.csv', 'r', encoding="utf8") as file, open('charts_clean.csv', 'w') as output:
         next(file)
         for line in file:
             output.write(line)
