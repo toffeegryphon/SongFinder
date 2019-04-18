@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<title>FindSongsBy</title>
+</head>
+
+{% block body %}
+	<body>
+		{% block header %}
+			<div class="page-header">
+				<h1 class="text-center">find songs by artist</h1>
+			</div>
+		{% endblock %}
+
+		{% block search %}
+			<div class="container p-1">
+				<form method="GET" name="search" action="/">
+					{{ search_form.artist_name(
+						placeholder="Artist Name", class="form-control form-group"
+						) }}
+					<input type="submit" class="btn btn-primary" value="search">
+				</form>
+			</div>
+		{% endblock %}
+
+		{% block result %}
+		{% endblock %}
+
+		{% block feedback %}
+			<div class="container p-1">
+				<form method="POST" name="feedback">
+					{{ feedback_form.hidden_tag() }}
+					{{ feedback_form.user(placeholder="User", class="form-control form-group") }}
+					{{ feedback_form.comment(placeholder="Feedback", class="form-control form-group") }}
+					{{ feedback_form.submit(class="btn btn-primary") }}
+				</form>
+			</div>
+		{% endblock %}
+	</body>
+{% endblock %}
+
+</html>
