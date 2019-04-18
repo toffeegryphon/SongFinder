@@ -13,7 +13,7 @@
 {% block body %}
 	<body>
 		{% block header %}
-			<div class="page-header">
+			<div class="page-header p-1">
 				<h1 class="text-center">find songs by artist</h1>
 			</div>
 		{% endblock %}
@@ -21,15 +21,40 @@
 		{% block search %}
 			<div class="container p-1">
 				<form method="GET" name="search" action="/">
-					{{ search_form.artist_name(
-						placeholder="Artist Name", class="form-control form-group"
-						) }}
-					<input type="submit" class="btn btn-primary" value="search">
+					<div class="d-flex">
+						<div class="flex-grow-1 p-1">
+							{{ search_form.artist_name(
+								placeholder="Artist Name", 
+								class="form-control form-group"
+								) }}
+						</div>
+						<div class="flex p-1">
+							<input type="submit" class="btn btn-primary" value="search">
+						</div>
+					</div>
 				</form>
 			</div>
 		{% endblock %}
 
 		{% block result %}
+		{% endblock %}
+
+		{% block charts %}
+			{% if charts %}
+				<div class="container">
+					<h2 class="p-1">top charts of the week</h2>
+					<table class="table">
+			    		<tbody>
+			    			{% for entry in charts %}
+			    				<tr>
+			    					<td>{{ entry.get('trackName') }}</td>
+			    					<td>{{ entry.get('artist') }}</td>
+			    				</tr>
+			    			{% endfor %}
+			    		</tbody>
+			    	</table>
+			    </div>
+			{% endif %}
 		{% endblock %}
 
 		{% block feedback %}

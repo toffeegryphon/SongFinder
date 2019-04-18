@@ -1,7 +1,75 @@
 {% extends 'base.html' %}
 	
 	{% block header %}
-		<div class="page-header">
-			<h1 class="text-center">find songs by {{ artist_name }}</h1>
+		<div class="page-header p-1">
+			<h1 class="text-center p-1">find songs by {{ artist_name }}</h1>
+		</div>
+	{% endblock %}
+
+	{% block result %}
+		<div class="container">
+			<table class="table">
+				<tbody>
+					{% for recording in recordings %}
+						<tr>
+		    				<td>{{ recording.get('votes') }}</td>
+		    				<td>{{ recording.get('title') }}</td>
+		    				{% if recording.get('album') %}
+		    					<td>
+			    					<ul>
+			    						{% for album in recording.get('albums') %}
+			    							{% if album %}
+			    								<li>{{ album.get('releases') }}</li>
+			    								{% else %}
+			    								<li>No album</li>
+			    							{% endif %}
+			    						{% endfor %}
+			    					</ul>
+		    					</td>	
+		    				{% endif %}
+		    			</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+
+		<div class="container">
+			<div class="container">
+				<p>Those who like songs by {{ artist_name }} would also like: </p>
+				<form method="POST" name="recommend" action="/">
+						<div class="d-flex">
+							{{ recommend_form.hidden_tag() }}
+							<div class="flex-grow-1 p-1">
+								{{ recommend_form.artist_name(
+									placeholder="Artist Name", 
+									class="form-control form-group"
+									) }}
+							</div>
+							<div class="flex p-1">
+								<input type="submit" class="btn btn-primary" value="recommend">
+							</div>
+						</div>
+					</form>
+			</div>
+
+			<div class="container">
+				{% if relationships %}
+					<div class="container">
+						<p>People also recommend</p>
+						<table class="table">
+							<tbody>
+								<tr>
+									<td>Artist</td>
+									<td>Votes</td>
+									{% for artist in relationships %}
+										<tr>
+											<td>{{ artist[0] }}</td>
+											<td>{{ artist[2] }}</td>
+									{% endfor %}
+							</tbody>
+						</table>
+					</div>
+				{% endif %}
+			</div>
 		</div>
 	{% endblock %}
