@@ -8,13 +8,13 @@
             "id": "53044f2e-74cb-4dd7-86c3-2059fce01643",
             "title": "All My Love",
             "albums": null,
-            "votes": 2
+            "votes": 14
         },
         {
             "title": "Angry Hill",
             "id": "061ddad1-9206-4cbc-bea4-61e67461adce",
             "albums": null,
-            "votes": 1
+            "votes": 4
         },
         {
             "id": "67f2bba6-fc36-4cab-9ebb-54ed2eb75fce",
@@ -228,6 +228,6 @@
         }
     ],
     "relationships": {
-        "73183948-2489-41cb-9a2d-8be5071971a5": 2
+        "73183948-2489-41cb-9a2d-8be5071971a5": 5
     }
 }

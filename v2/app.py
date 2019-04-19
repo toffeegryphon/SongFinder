@@ -32,21 +32,21 @@ def create_app():
 		artist_name = StringField(default = 'george ezra', validators = [DataRequired()])
 
 	class RecommendForm(FlaskForm):
-		form_name = HiddenField('form_name')
+		form_name = HiddenField('form_name', id = 'form_name_recommend')
 		main_artist = HiddenField('main_artist')
 		artist_name = StringField(default = 'sigrid', validators = [DataRequired()])
 		submit = SubmitField()
 
 	class FeedbackForm(FlaskForm):
-		form_name = HiddenField('form_name')
+		form_name = HiddenField('form_name', id = 'form_name_feedback')
 		user = StringField(default = 'anonymous')
 		comment = TextAreaField(validators = [DataRequired()])
 		submit = SubmitField()
 
-	class VotingForm(FlaskForm):
-		form_name = HiddenField('form_name')
-		artist_id = HiddenField('artist_id')
-		vote_recording = HiddenField('vote_recording')
+	# class VoteForm(FlaskForm):
+	# 	form_name = HiddenField('form_name', id = 'form_name_vote')
+	# 	artist_id = HiddenField('artist_id')
+	# 	vote_recording = HiddenField('vote_recording')
 
 
 	@app.route('/')
@@ -128,7 +128,7 @@ def create_app():
 
 			elif request.form.get('form_name') == 'recommend':
 				recommend_form = RecommendForm(request.form)
-				feedback_form = FeedbackForm()
+				feedback_form = FeedbackForm(form_name = 'feedback')
 				search_form = SearchForm()
 
 				main_artist = cache.get('main_artist')
@@ -150,6 +150,10 @@ def create_app():
 
 				print(relationships)
 				cache.set('main_artist', main_artist)
+
+				print(feedback_form.form_name)
+				feedback_form.form_name.data = 'feedback'
+				print(feedback_form.form_name)
 
 				return render_template(
 					'artist.html', 
@@ -173,23 +177,40 @@ def create_app():
 
 				if vote_direction == '\u21D1':
 					artist = songs.upvote(artist_id, vote_recording)
+					cache.set('main_artist', artist)
 				else:
 					artist = cache.get('main_artist')
 					if artist == None:
 						artist = songs.buildArtistWithId(artist_id)
+						cache.set('main_artist', artist)
 				
+				relationships = []
+				for relationship in artist.get('relationships'):
+					print("Relationship: ", relationship)
+					##TODO Fix Somehow this is None
+					print(artist.get('relationships').get(relationship))
+					relationships.append([songs.getArtistName(relationship), relationship, artist.get('relationships').get(relationship)])
+
+				recommend_form = RecommendForm(
+					form_name = 'recommend', 
+					main_artist = artist.get('artistName')
+					)
+				recommend_form.form_name.data = 'recommend'
+
+				feedback_form = FeedbackForm(form_name = 'feedback')
+				print(feedback_form.form_name)
+				feedback_form.form_name.data = 'feedback'
+				print(feedback_form.form_name)
+
 				return render_template(
 					'artist.html', 
 					artist_name = artist.get('artistName'), 
 					artist_id = artist.get('artistId'),  
-					feedback_form = FeedbackForm(form_name = 'feedback'), 
+					feedback_form = feedback_form, 
 					search_form = SearchForm(), 
-					recommend_form = RecommendForm(
-						form_name = 'recommend', 
-						main_artist = artist.get('artistName')
-						), 
+					recommend_form = recommend_form,  
 					recordings = artist.get('recordings'), 
-					relationships = artist.get('relationships'), 
+					relationships = relationships, 
 					similar_sounding = cache.get('similar_sounding')
 					)
 
