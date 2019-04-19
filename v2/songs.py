@@ -27,9 +27,12 @@ def getArtistId(artist, numberOfResults = 1):
 
     if numberOfResults != 1:
         artistIds = {}
-        artists = json.loads(requestArtistId).get('artists')
+        artists = json.loads(requestArtistId).get('artists')[1:numberOfResults]
         for artist in artists:
-            artistIds.update({artist.get('id') : artist.get('name')})
+            artistName = artist.get('name')
+            if artist.get('disambiguation') != None:
+                artistName = artistName + ', ' + artist.get('disambiguation')
+            artistIds.update({artistName : artist.get('id')})
         return artistIds
     artistId = json.loads(requestArtistId).get('artists')[0].get('id')
 
@@ -42,7 +45,7 @@ class ArtistInput(Enum):
 def getSongsByArtistId(artistId, offset=None, songlist=None):
     ##TODO Fix heroku throws 500 Internal Server Error @ ~ page 12
     print("Requesting raw list of %s's recordings" % (artistId))
-    if offset == None:
+    if offset == None or False:
         offset = 0
     if songlist == None:
         songlist = []
@@ -183,6 +186,20 @@ def getSongsByArtist(artist, getAlbumsOfSongs = False):
         ##console.log(json.dumps(songlist, indent=4))
     return songlist
 
+def getSongsByArtistWithId(artistId, getAlbumsOfSongs = False):
+    songlist = cleanList(getSongsByArtistId(artistId), artistId)
+    ##TODO Optimise
+    if getAlbumsOfSongs:
+        for song in songlist:
+            albumlist = getAlbumsOfSong(song.get("title"), artistId)
+            print(albumlist)
+            song.update({"albums" : albumlist})
+            print(json.dumps(song, indent = 4))
+        with open("data/%s_clean.json" % (artistId), 'w') as songsFile:
+            json.dump(songlist, songsFile, indent=4)
+        ##console.log(json.dumps(songlist, indent=4))
+    return songlist
+
 ##TODO Add versions. If version does not match, delete file and rebuild
 ##TODO Add force update
 def buildArtist(artistName, getAlbumsOfSongs = False):
@@ -219,6 +236,7 @@ def buildArtistWithId(artistId, getAlbumsOfSongs = False):
         with open('./data/%s.json' % (artistId), 'r') as artistFile:
             return json.load(artistFile)
 
+    artistName = getArtistName(artistId)
     print("Building %s's artist profile" % (artistName))
     artist = {"artistId" : artistId, "artistName" : artistName}
 
@@ -228,7 +246,7 @@ def buildArtistWithId(artistId, getAlbumsOfSongs = False):
             songs = json.load(songsFile)
 
     else:
-        songs = getSongsByArtist(artistName, getAlbumsOfSongs)
+        songs = getSongsByArtistWithId(artistId, getAlbumsOfSongs)
 
     ##Build Artist
     artist.update({"recording-count" : len(songs), "recordings-order" : Sort.ALPHABETICAL.value, "recordings" : songs, "relationships" : {}})
@@ -287,11 +305,9 @@ def addRelationship(secondArtistName, mainArtistName):
 
     return(mainArtist.get("relationships").get(secondId))
 
-def upvote(artistName, trackName):
+def upvote(artistId, trackName):
     print("UPVOTE CALLED")
-    artistId = getArtistId(artistName)
     print(artistId)
-    print(artistName)
     print(trackName)
 
     artist = buildArtistWithId(artistId)

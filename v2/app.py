@@ -43,6 +43,11 @@ def create_app():
 		comment = TextAreaField(validators = [DataRequired()])
 		submit = SubmitField()
 
+	class VotingForm(FlaskForm):
+		form_name = HiddenField('form_name')
+		artist_id = HiddenField('artist_id')
+		vote_recording = HiddenField('vote_recording')
+
 
 	@app.route('/')
 	def base():
@@ -60,7 +65,8 @@ def create_app():
 
 			recommend_form = RecommendForm(
 				form_name = 'recommend', 
-				main_artist = artist_name)
+				main_artist = artist_name
+				)
 
 			# if request.args.get('track'):
 			# 	##TODO return in correct sorted order based on prior to refreshing
@@ -76,14 +82,20 @@ def create_app():
 				relationships.append([songs.getArtistName(relationship), relationship, artist.get('relationships').get(relationship)])
 			print(relationships)
 
+			similar_sounding = songs.getArtistId(artist_name, 4)
+			print(similar_sounding)
+			cache.set('similar_sounding', similar_sounding)
+
 			return render_template(
 				'artist.html', 
-				artist_name = artist_name, 
+				artist_name = artist_name,
+				artist_id = artist.get('artistId'),  
 				feedback_form = feedback_form, 
 				search_form = search_form, 
 				recommend_form = recommend_form, 
 				recordings = recordings, 
-				relationships = relationships
+				relationships = relationships, 
+				similar_sounding = similar_sounding
 				)
 
 		return render_template(
@@ -114,7 +126,7 @@ def create_app():
 
 				return redirect(url_for('base'))
 
-			if request.form.get('form_name') == 'recommend':
+			elif request.form.get('form_name') == 'recommend':
 				recommend_form = RecommendForm(request.form)
 				feedback_form = FeedbackForm()
 				search_form = SearchForm()
@@ -142,11 +154,43 @@ def create_app():
 				return render_template(
 					'artist.html', 
 					artist_name = main_name, 
+					artist_id = main_artist.get('artistId'),  
 					feedback_form = feedback_form, 
 					search_form = search_form, 
 					recommend_form = recommend_form, 
 					recordings = main_artist.get('recordings'), 
-					relationships = relationships
+					relationships = relationships, 
+					similar_sounding = cache.get('similar_sounding')
+					)
+
+			elif request.form.get('form_name') == 'vote':
+				artist_id = request.form.get('artist_id')
+				print(artist_id)
+				vote_recording = request.form.get('vote_recording')
+				print(vote_recording)
+				vote_direction = request.form.get('vote_direction')
+				print(vote_direction)
+
+				if vote_direction == '\u21D1':
+					artist = songs.upvote(artist_id, vote_recording)
+				else:
+					artist = cache.get('main_artist')
+					if artist == None:
+						artist = songs.buildArtistWithId(artist_id)
+				
+				return render_template(
+					'artist.html', 
+					artist_name = artist.get('artistName'), 
+					artist_id = artist.get('artistId'),  
+					feedback_form = FeedbackForm(form_name = 'feedback'), 
+					search_form = SearchForm(), 
+					recommend_form = RecommendForm(
+						form_name = 'recommend', 
+						main_artist = artist.get('artistName')
+						), 
+					recordings = artist.get('recordings'), 
+					relationships = artist.get('relationships'), 
+					similar_sounding = cache.get('similar_sounding')
 					)
 
 		else:
@@ -154,5 +198,48 @@ def create_app():
 			print(request.query_string)
 
 		return redirect(url_for('base'))
+
+	@app.route('/id/<artist_id>')
+	def get_artist(artist_id):
+		feedback_form = FeedbackForm(form_name = 'feedback')
+		search_form = SearchForm()
+
+		artist = songs.buildArtistWithId(artist_id)
+		artist_name = artist.get('artistName')
+
+		recommend_form = RecommendForm(
+			form_name = 'recommend', 
+			main_artist = artist_name
+			)
+
+		# if request.args.get('track'):
+		# 	##TODO return in correct sorted order based on prior to refreshing
+		# 	artist = songs.upvote(artistName, request.args.get('track'))
+
+		cache.set('main_artist', artist)
+		recordings = artist.get('recordings')
+		relationships = []
+		for relationship in artist.get('relationships'):
+			print("Relationship: ", relationship)
+			##TODO Fix Somehow this is None
+			print(artist.get('relationships').get(relationship))
+			relationships.append([songs.getArtistName(relationship), relationship, artist.get('relationships').get(relationship)])
+		print(relationships)
+
+		similar_sounding = songs.getArtistId(artist_name, 4)
+		print(similar_sounding)
+		cache.set('similar_sounding', similar_sounding)
+
+		return render_template(
+			'artist.html', 
+			artist_name = artist_name, 
+			artist_id = artist.get('artistId'),  
+			feedback_form = feedback_form, 
+			search_form = search_form, 
+			recommend_form = recommend_form, 
+			recordings = recordings, 
+			relationships = relationships, 
+			similar_sounding = similar_sounding
+			)
 
 	return app

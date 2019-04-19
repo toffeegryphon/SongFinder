@@ -2,7 +2,18 @@
 	
 	{% block header %}
 		<div class="page-header p-1">
-			<h1 class="text-center p-1">find songs by {{ artist_name }}</h1>
+			<h1 class="text-center p-1">
+				<span class="d-inline-block">find songs by</span>
+
+				<span class="d-inline-block">{{ artist_name }}</span></h1>
+
+			{% if similar_sounding %}
+				<p class="text-center p-2">or did u mean
+					{% for name, artist_id in similar_sounding.items() %}
+					<span class="d-inline-block"><a href="/id/{{ artist_id }}" class="btn btn-link">- {{ name }}</a></span>
+					{% endfor %}
+				?</p>
+			{% endif %}
 		</div>
 	{% endblock %}
 
@@ -12,7 +23,16 @@
 				<tbody>
 					{% for recording in recordings %}
 						<tr>
-		    				<td>{{ recording.get('votes') }}</td>
+		    				<td>
+		    					<form method="POST" name="vote">
+		    						<input type="hidden" name="form_name" value="vote">
+		    						<input type="hidden" name="artist_id" value="{{ artist_id }}">
+		    						<input type="hidden" name="vote_recording" value="{{ recording.get('title') }}">
+			    					<input type="submit" name="vote_direction" value="&uArr;" class="btn btn-link">
+			    					{{ recording.get('votes') }}
+			    					<!-- <input type="submit" name="vote_direction" value="&dArr;" class="btn btn-link">  Disabled -->
+		    					</form>
+		    				</td>
 		    				<td>{{ recording.get('title') }}</td>
 		    				{% if recording.get('album') %}
 		    					<td>

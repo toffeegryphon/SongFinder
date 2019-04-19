@@ -1,7 +1,7 @@
 [
     {
-        "title": "All My Love",
         "id": "53044f2e-74cb-4dd7-86c3-2059fce01643",
+        "title": "All My Love",
         "albums": null,
         "votes": 0
     },
@@ -12,8 +12,8 @@
         "votes": 0
     },
     {
-        "title": "Barcelona",
         "id": "67f2bba6-fc36-4cab-9ebb-54ed2eb75fce",
+        "title": "Barcelona",
         "albums": null,
         "votes": 0
     },
@@ -24,8 +24,8 @@
         "votes": 0
     },
     {
-        "id": "3135bca6-0dbd-4997-b6dc-cbb20a9df7c8",
         "title": "Blame It on Me",
+        "id": "3135bca6-0dbd-4997-b6dc-cbb20a9df7c8",
         "albums": null,
         "votes": 0
     },
@@ -78,8 +78,8 @@
         "votes": 0
     },
     {
-        "title": "Don't Worry Be Happy",
         "id": "0f20ae72-5bc6-4438-8c56-4aa2e0df143f",
+        "title": "Don't Worry Be Happy",
         "albums": null,
         "votes": 0
     },
@@ -102,8 +102,8 @@
         "votes": 0
     },
     {
-        "id": "3a620c10-f7ad-4c35-8dbd-5a50761d46de",
         "title": "Get Lonely With Me",
+        "id": "3a620c10-f7ad-4c35-8dbd-5a50761d46de",
         "albums": null,
         "votes": 0
     },
@@ -114,14 +114,14 @@
         "votes": 0
     },
     {
-        "id": "15898502-83ea-4be9-9dbd-5ecf26461f33",
         "title": "Hold My Girl",
+        "id": "15898502-83ea-4be9-9dbd-5ecf26461f33",
         "albums": null,
         "votes": 0
     },
     {
-        "id": "e4c5005f-c68b-478b-933a-cab13eb4d3d6",
         "title": "It\u2019s Just My Skin",
+        "id": "e4c5005f-c68b-478b-933a-cab13eb4d3d6",
         "albums": null,
         "votes": 0
     },
@@ -150,8 +150,8 @@
         "votes": 0
     },
     {
-        "id": "14dd6b81-b6bc-487d-9e8c-7ad3a870186e",
         "title": "Paradise",
+        "id": "14dd6b81-b6bc-487d-9e8c-7ad3a870186e",
         "albums": null,
         "votes": 0
     },
@@ -168,32 +168,32 @@
         "votes": 0
     },
     {
-        "id": "0cd6775e-dc7d-479f-bc46-e6b70ea2a0d6",
         "title": "Shotgun",
+        "id": "0cd6775e-dc7d-479f-bc46-e6b70ea2a0d6",
         "albums": null,
         "votes": 0
     },
     {
-        "id": "8967dae5-a6f4-47c3-ba85-93d4b22fd1cb",
         "title": "Song 6",
+        "id": "8967dae5-a6f4-47c3-ba85-93d4b22fd1cb",
         "albums": null,
         "votes": 0
     },
     {
-        "id": "1b895642-b223-4d08-9e8b-af90231a0ac9",
         "title": "Spectacular Rival",
+        "id": "1b895642-b223-4d08-9e8b-af90231a0ac9",
         "albums": null,
         "votes": 0
     },
     {
-        "title": "Stand by Your Gun",
         "id": "a5aeb62a-9b10-4902-8ec7-f9039fee5174",
+        "title": "Stand by Your Gun",
         "albums": null,
         "votes": 0
     },
     {
-        "title": "Sugarcoat",
         "id": "016ec884-f607-42d1-a7a4-de68ce240252",
+        "title": "Sugarcoat",
         "albums": null,
         "votes": 0
     },
@@ -210,14 +210,14 @@
         "votes": 0
     },
     {
-        "id": "70f31953-2ba0-41b1-b844-f11040b52aef",
         "title": "Welcome to Daytrotter",
+        "id": "70f31953-2ba0-41b1-b844-f11040b52aef",
         "albums": null,
         "votes": 0
     },
     {
-        "id": "ccc2e96e-53f8-4fc6-9930-e2217542f77d",
         "title": "White Christmas",
+        "id": "ccc2e96e-53f8-4fc6-9930-e2217542f77d",
         "albums": null,
         "votes": 0
     }

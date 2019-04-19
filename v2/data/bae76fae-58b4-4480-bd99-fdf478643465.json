@@ -1,0 +1,15 @@
+{
+    "artistId": "bae76fae-58b4-4480-bd99-fdf478643465",
+    "artistName": "EZRA",
+    "recording-count": 1,
+    "recordings-order": 1,
+    "recordings": [
+        {
+            "title": "White Noise",
+            "id": "90257b9a-685a-4e87-8813-bcaf7b93b84e",
+            "albums": null,
+            "votes": 0
+        }
+    ],
+    "relationships": {}
+}

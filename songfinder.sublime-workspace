@@ -4,8 +4,72 @@
 		"selected_items":
 		[
 			[
+				"feedback",
+				"feedback_form"
+			],
+			[
+				"main",
+				"main_name"
+			],
+			[
+				"sec",
+				"second_artist"
+			],
+			[
+				"da",
+				"data"
+			],
+			[
+				"ma",
+				"main_artist"
+			],
+			[
+				"reco",
+				"recommend"
+			],
+			[
+				"f",
+				"form_name"
+			],
+			[
+				"form",
+				"form_name"
+			],
+			[
+				"fe",
+				"feedback_form"
+			],
+			[
+				"Re",
+				"RecommendForm"
+			],
+			[
 				"re",
-				"return"
+				"recommend_form"
+			],
+			[
+				"rec",
+				"recommend_form"
+			],
+			[
+				"c",
+				"container"
+			],
+			[
+				"sea",
+				"search_form"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"arti",
+				"artist_name"
+			],
+			[
+				"fo",
+				"form"
 			],
 			[
 				"ar",
@@ -43,8 +107,24 @@
 			"file": "v2/app.py",
 			"settings":
 			{
-				"buffer_size": 1663,
+				"buffer_size": 4453,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/__init__.py",
+			"settings":
+			{
+				"buffer_size": 4134,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/templates/main_with_result.html",
+			"settings":
+			{
+				"buffer_size": 1941,
 				"line_ending": "Unix"
 			}
 		},
@@ -52,19 +132,25 @@
 			"file": "v2/templates/artist.html",
 			"settings":
 			{
-				"buffer_size": 89,
+				"buffer_size": 1966,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n\n\t<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\n\n\t<title>FindSongsBy</title>\n</head>\n\n<body>\n\t{% block header %}\n\t\t<div class=\"page-header\">\n\t\t\t<h1 class=\"text-center\">find songs by artist</h1>\n\t\t</div>\n\t{% endblock %}\n\n\t{% block search %}\n\t\t<div class=\"container p-1\">\n\t\t\t<form method=\"GET\" name=\"search\" action=\"/\">\n\t\t\t\t{{ search_form.artist_name(\n\t\t\t\t\tplaceholder=\"Artist Name\", class=\"form-control form-group\"\n\t\t\t\t\t) }}\n\t\t\t\t<input type=\"submit\" class=\"btn btn-primary\" value=\"search\">\n\t\t\t</form>\n\t\t</div>\n\t{% endblock %}\n\n\t{% block feedback %}\n\t\t<div class=\"container p-1\">\n\t\t\t<form method=\"POST\" name=\"feedback\">\n\t\t\t\t{{ feedback_form.hidden_tag() }}\n\t\t\t\t{{ feedback_form.user(placeholder=\"User\", class=\"form-control form-group\") }}\n\t\t\t\t{{ feedback_form.comment(placeholder=\"Feedback\", class=\"form-control form-group\") }}\n\t\t\t\t{{ feedback_form.submit(class=\"btn btn-primary\") }}\n\t\t\t</form>\n\t\t</div>\n\t{% endblock %}\n</body>\n\n</html>",
 			"file": "v2/templates/base.html",
-			"file_size": 1250,
-			"file_write_time": 131998968160679228,
 			"settings":
 			{
-				"buffer_size": 1253,
+				"buffer_size": 1933,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "v2/songs.py",
+			"settings":
+			{
+				"buffer_size": 14202,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -84,22 +170,6 @@
 			{
 				"buffer_size": 182,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/__init__.py",
-			"settings":
-			{
-				"buffer_size": 4134,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/templates/main.html",
-			"settings":
-			{
-				"buffer_size": 2403,
 				"line_ending": "Unix"
 			}
 		}
@@ -138,11 +208,14 @@
 	[
 		"/home/nairen/Projects/SongFinder",
 		"/home/nairen/Projects/SongFinder/v2",
+		"/home/nairen/Projects/SongFinder/v2/data",
 		"/home/nairen/Projects/SongFinder/v2/instance",
 		"/home/nairen/Projects/SongFinder/v2/templates"
 	],
 	"file_history":
 	[
+		"/home/nairen/Projects/SongFinder/application/templates/main.html",
+		"/home/nairen/Projects/SongFinder/v2/templates/base.html",
 		"/home/nairen/Projects/SongFinder/application/templates/main_with_result.html",
 		"/home/nairen/Projects/SongFinder/application/get_songs.py",
 		"/home/nairen/Projects/SongFinder/requirements.txt"
@@ -180,7 +253,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -189,43 +262,102 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1663,
+						"buffer_size": 4453,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								985,
-								985
+								3268,
+								3268
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 432.0,
+						"translation.y": 998.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/__init__.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3704,
+								3704
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1674.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/templates/main_with_result.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1941,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								523,
+								523
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 648.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 3,
 					"file": "v2/templates/artist.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 89,
+						"buffer_size": 1966,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								49,
-								49
+								209,
+								209
 							]
 						],
 						"settings":
@@ -240,35 +372,66 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "v2/templates/base.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1253,
+						"buffer_size": 1933,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								387,
-								387
+								1132,
+								1132
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 648.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
+					"file": "v2/songs.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14202,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7736,
+								7736
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3132.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "v2/db.py",
 					"semi_transient": false,
 					"settings":
@@ -293,11 +456,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 7,
 					"file": "v2/schema.sql",
 					"semi_transient": false,
 					"settings":
@@ -322,63 +485,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "application/__init__.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4134,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "application/templates/main.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2403,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
 					"type": "text"
 				}
 			]
