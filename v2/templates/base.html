@@ -6,67 +6,70 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" type="text/css" href="static/app.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="static/style.css"> -->
 
 	<title>FindSongsBy</title>
 </head>
 
 {% block body %}
 	<body>
-		{% block header %}
-			<div class="page-header p-1">
-				<h1 class="text-center">find songs by artist</h1>
-			</div>
-		{% endblock %}
+		<div class="container">
+			{% block header %}
+				<div class="page-header p-1">
+					<h1 class="text-center"><a href="/" class="link">find songs by artist</a></h1>
+				</div>
+			{% endblock %}
 
-		{% block search %}
-			<div class="container p-1">
+			{% block search %}
 				<form method="GET" name="search" action="/">
-					<div class="d-flex">
-						<div class="flex-grow-1 p-1">
+					<div class="d-flex flex-row justify-content-center card m-3">
+						<div class="flex-grow-1 p-2">
 							{{ search_form.artist_name(
 								placeholder="Artist Name", 
-								class="form-control form-group"
+								class="form-control"
 								) }}
 						</div>
-						<div class="flex p-1">
+						<div class="pr-2 py-2">
 							<input type="submit" class="btn btn-primary" value="search">
 						</div>
 					</div>
 				</form>
-			</div>
-		{% endblock %}
+			{% endblock %}
 
-		{% block result %}
-		{% endblock %}
+			{% block result %}
+			{% endblock %}
 
-		{% block charts %}
-			{% if charts %}
-				<div class="container">
-					<h2 class="p-1">top charts of the week</h2>
-					<table class="table">
-			    		<tbody>
-			    			{% for entry in charts %}
-			    				<tr>
-			    					<td>{{ entry.get('trackName') }}</td>
-			    					<td>{{ entry.get('artist') }}</td>
-			    				</tr>
-			    			{% endfor %}
-			    		</tbody>
-			    	</table>
-			    </div>
-			{% endif %}
-		{% endblock %}
+			{% block charts %}
+				{% if charts %}
+					<div class="d-flex justify-content-center card m-3">
+						<h4 class="text-center p-2">top charts of the week</h4>
+						<table class="table table-sm table-dark rounded">
+				    		<tbody>
+				    			{% for entry in charts %}
+				    				<tr>
+				    					<td>{{ entry.get('trackName') }}</td>
+				    					<td>{{ entry.get('artist') }}</td>
+				    				</tr>
+				    			{% endfor %}
+				    		</tbody>
+				    	</table>
+				    </div>
+				{% endif %}
+			{% endblock %}
 
-		{% block feedback %}
-			<div class="container p-1">
-				<form method="POST" name="feedback">
-					{{ feedback_form.hidden_tag() }}
-					{{ feedback_form.user(placeholder="User", class="form-control form-group") }}
-					{{ feedback_form.comment(placeholder="Feedback", class="form-control form-group") }}
-					{{ feedback_form.submit(class="btn btn-primary") }}
-				</form>
-			</div>
-		{% endblock %}
+			{% block feedback %}
+				<div class="d-flex justify-content-center card m-3">
+					<h4 class="text-center p-2">bugs, suggestions and feedback?</h4>
+					<form method="POST" name="feedback" class="p-2">
+						{{ feedback_form.hidden_tag() }}
+						{{ feedback_form.user(placeholder="User", class="form-control form-group") }}
+						{{ feedback_form.comment(placeholder="Feedback", class="form-control form-group") }}
+						{{ feedback_form.submit(class="btn btn-primary") }}
+					</form>
+				</div>
+			{% endblock %}
+		</div>
 	</body>
 {% endblock %}
 

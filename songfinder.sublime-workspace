@@ -4,12 +4,140 @@
 		"selected_items":
 		[
 			[
-				"feedback",
+				"art",
+				"artist_id"
+			],
+			[
+				"sort",
+				"sort_method"
+			],
+			[
+				"arti",
+				"artist_id"
+			],
+			[
+				"sor",
+				"sort_method"
+			],
+			[
+				"p-",
+				"p-0"
+			],
+			[
+				"btn",
+				"btn-link"
+			],
+			[
+				"t",
+				"th\tTag"
+			],
+			[
+				"li",
+				"link-hover-color"
+			],
+			[
+				"css",
+				"css"
+			],
+			[
+				"text-c",
+				"text-decoration-color\tproperty"
+			],
+			[
+				"text-co",
+				"text-decoration-line\tproperty"
+			],
+			[
+				"tex",
+				"text-decoration\tproperty"
+			],
+			[
+				"ar",
+				"artist_name"
+			],
+			[
+				"bui",
+				"buildArtist"
+			],
+			[
+				"fe",
 				"feedback_form"
 			],
 			[
+				"fee",
+				"feedback_form"
+			],
+			[
+				"recom",
+				"recommend_form"
+			],
+			[
+				"reco",
+				"recommend_form"
+			],
+			[
+				"vote",
+				"vote_recording"
+			],
+			[
+				"artist",
+				"artist_id"
+			],
+			[
 				"main",
-				"main_name"
+				"main_artist"
+			],
+			[
+				"vo",
+				"vote_recording"
+			],
+			[
+				"recording",
+				"vote_recording"
+			],
+			[
+				"g",
+				"get"
+			],
+			[
+				"bt",
+				"btn-link"
+			],
+			[
+				"fo",
+				"form\tTag"
+			],
+			[
+				"fon",
+				"font-size\tproperty"
+			],
+			[
+				"getA",
+				"getAlbumsOfSongs"
+			],
+			[
+				"get",
+				"getArtistName"
+			],
+			[
+				"simi",
+				"similar_sounding_names"
+			],
+			[
+				"d-",
+				"d-inline-block"
+			],
+			[
+				"p",
+				"p-1"
+			],
+			[
+				"artis",
+				"artistIds"
+			],
+			[
+				"feedback",
+				"feedback_form"
 			],
 			[
 				"sec",
@@ -24,20 +152,12 @@
 				"main_artist"
 			],
 			[
-				"reco",
-				"recommend"
-			],
-			[
 				"f",
 				"form_name"
 			],
 			[
 				"form",
 				"form_name"
-			],
-			[
-				"fe",
-				"feedback_form"
 			],
 			[
 				"Re",
@@ -64,24 +184,8 @@
 				"div\tTag"
 			],
 			[
-				"arti",
-				"artist_name"
-			],
-			[
-				"fo",
-				"form"
-			],
-			[
-				"ar",
-				"artist_name"
-			],
-			[
 				"ac",
 				"action\tAttr"
-			],
-			[
-				"bt",
-				"btn-primary"
 			],
 			[
 				"ur",
@@ -107,7 +211,24 @@
 			"file": "v2/app.py",
 			"settings":
 			{
-				"buffer_size": 4453,
+				"buffer_size": 9928,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/nairen/Downloads/procontroller.descriptor.txt",
+			"settings":
+			{
+				"buffer_size": 5790,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/nairen/Projects/Scraper/application/scrape.py",
+			"settings":
+			{
+				"buffer_size": 4613,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -121,18 +242,10 @@
 			}
 		},
 		{
-			"file": "application/templates/main_with_result.html",
-			"settings":
-			{
-				"buffer_size": 1941,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "v2/templates/artist.html",
 			"settings":
 			{
-				"buffer_size": 1966,
+				"buffer_size": 3385,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -141,7 +254,7 @@
 			"file": "v2/templates/base.html",
 			"settings":
 			{
-				"buffer_size": 1933,
+				"buffer_size": 2345,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -150,25 +263,7 @@
 			"file": "v2/songs.py",
 			"settings":
 			{
-				"buffer_size": 14202,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "v2/db.py",
-			"settings":
-			{
-				"buffer_size": 795,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "v2/schema.sql",
-			"settings":
-			{
-				"buffer_size": 182,
+				"buffer_size": 14977,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -185,6 +280,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"set syntax: sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
 		],
 		"width": 0.0
 	},
@@ -208,21 +311,32 @@
 	[
 		"/home/nairen/Projects/SongFinder",
 		"/home/nairen/Projects/SongFinder/v2",
-		"/home/nairen/Projects/SongFinder/v2/data",
 		"/home/nairen/Projects/SongFinder/v2/instance",
+		"/home/nairen/Projects/SongFinder/v2/static",
 		"/home/nairen/Projects/SongFinder/v2/templates"
 	],
 	"file_history":
 	[
-		"/home/nairen/Projects/SongFinder/application/templates/main.html",
+		"/home/nairen/Projects/SongFinder/v2/schema.sql",
+		"/home/nairen/Projects/SongFinder/v2/db.py",
+		"/home/nairen/Projects/SongFinder/v2/static/style.css",
+		"/home/nairen/Projects/SongFinder/v2/static/app.css",
+		"/home/nairen/Projects/SongFinder/v2/static/bootstrap-4.0.0/scss/_buttons.scss",
+		"/home/nairen/Projects/SongFinder/v2/static/bootstrap-4.0.0/scss/_variables.scss",
+		"/home/nairen/Projects/SongFinder/v2/static/style.scss",
 		"/home/nairen/Projects/SongFinder/v2/templates/base.html",
+		"/home/nairen/Projects/SongFinder/v2/static/bootstrap-4.0.0/README.md",
 		"/home/nairen/Projects/SongFinder/application/templates/main_with_result.html",
+		"/home/nairen/Projects/SongFinder/application/__init__.py",
+		"/home/nairen/Projects/SongFinder/v2/data/2c5e2a98-d9ea-46b5-9618-d9bb4863a920.json",
+		"/home/nairen/Projects/SongFinder/v2/data/02a59d36-50ef-4a96-aa50-2807b404f586.json",
+		"/home/nairen/Projects/SongFinder/application/templates/main.html",
 		"/home/nairen/Projects/SongFinder/application/get_songs.py",
 		"/home/nairen/Projects/SongFinder/requirements.txt"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -236,6 +350,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sort",
+			"font-color",
+			"white",
+			"theme-color",
+			"color",
+			"$btn",
+			"$btn-col",
+			"$btn",
+			"$button",
+			"search",
+			"flex-grow",
+			"$link",
+			"link",
+			"body-bg",
+			"theme",
+			"link"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -253,7 +383,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -262,15 +392,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4453,
+						"buffer_size": 9928,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3268,
-								3268
+								8299,
+								8299
 							]
 						],
 						"settings":
@@ -279,14 +409,70 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 998.0,
+						"translation.y": 1920.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "/home/nairen/Downloads/procontroller.descriptor.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5790,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1711,
+								1711
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 285.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/nairen/Projects/Scraper/application/scrape.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4577,
+								4577
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1882.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "application/__init__.py",
 					"semi_transient": false,
 					"settings":
@@ -298,94 +484,65 @@
 						"selection":
 						[
 							[
-								3704,
-								3704
+								2253,
+								2253
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false,
-							"word_wrap": true
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 58.0,
+						"translation.y": 943.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "v2/templates/artist.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3385,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								894,
+								894
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1674.0,
+						"translation.y": 228.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "application/templates/main_with_result.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1941,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								523,
-								523
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 648.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "v2/templates/artist.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1966,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								209,
-								209
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "v2/templates/base.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1933,
+						"buffer_size": 2345,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1132,
-								1132
+								752,
+								752
 							]
 						],
 						"settings":
@@ -394,27 +551,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 648.0,
+						"translation.y": 513.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "v2/songs.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14202,
+						"buffer_size": 14977,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7736,
-								7736
+								13124,
+								13124
 							]
 						],
 						"settings":
@@ -424,64 +581,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3132.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "v2/db.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 795,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								795,
-								795
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "v2/schema.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 182,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								182,
-								182
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SQL/SQL.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 6092.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
@@ -492,7 +592,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -529,7 +629,7 @@
 	"project": "songfinder.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":

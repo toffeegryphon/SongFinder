@@ -2,10 +2,11 @@
 	
 	{% block header %}
 		<div class="page-header p-1">
-			<h1 class="text-center p-1">
+			<h1 class="text-center p-1"><a href="/">
 				<span class="d-inline-block">find songs by</span>
 
-				<span class="d-inline-block">{{ artist_name }}</span></h1>
+				<span class="d-inline-block">{{ artist_name }}</span>
+			</a></h1>
 
 			{% if similar_sounding %}
 				<p class="text-center p-2">or did u mean
@@ -18,9 +19,17 @@
 	{% endblock %}
 
 	{% block result %}
-		<div class="container">
-			<table class="table">
+		<div class="d-flex justify-content-center card m-3">
+			<table class="table table-sm table-dark rounded">
 				<tbody>
+					<tr>
+						<form method="POST" name="sort">
+							<input type="hidden" id="form_name_sort" name="form_name" value="sort">
+							<input type="hidden" name="artist_id" value="{{ artist_id }}">
+							<th><button type="submit" name="sort_order" class="btn btn-link p-0" value="sort_votes">&#x25BC;</button> votes</th>
+							<th><button type="submit" name="sort_order" class="btn btn-link p-0" value="sort_alphabetical">&#x25BC;</button> name</th>
+						</form>
+					</tr>
 					{% for recording in recordings %}
 						<tr>
 		    				<td>
@@ -28,8 +37,8 @@
 		    						<input type="hidden" id="form_name_vote" name="form_name" value="vote">
 		    						<input type="hidden" name="artist_id" value="{{ artist_id }}">
 		    						<input type="hidden" name="vote_recording" value="{{ recording.get('title') }}">
-			    					<input type="submit" name="vote_direction" value="&uArr;" class="btn btn-link">
-			    					{{ recording.get('votes') }}
+			    					<input type="submit" name="vote_direction" value="&uArr;" class="btn btn-link p-0">
+			    					<span class="align-middle">{{ recording.get('votes') }}</span>
 			    					<!-- <input type="submit" name="vote_direction" value="&dArr;" class="btn btn-link">  Disabled -->
 		    					</form>
 		    				</td>
@@ -53,7 +62,7 @@
 			</table>
 		</div>
 
-		<div class="container">
+		<div class="container card m-1">
 			<div class="container">
 				<p>Those who like songs by {{ artist_name }} would also like: </p>
 				<form method="POST" name="recommend" action="/">
@@ -72,24 +81,22 @@
 					</form>
 			</div>
 
-			<div class="container">
-				{% if relationships %}
-					<div class="container">
-						<p>People also recommend</p>
-						<table class="table">
-							<tbody>
-								<tr>
-									<td>Artist</td>
-									<td>Votes</td>
-									{% for artist in relationships %}
-										<tr>
-											<td>{{ artist[0] }}</td>
-											<td>{{ artist[2] }}</td>
-									{% endfor %}
-							</tbody>
-						</table>
-					</div>
-				{% endif %}
-			</div>
+			{% if relationships %}
+				<div class="container">
+					<p>People also recommend</p>
+					<table class="table table-sm table-dark rounded">
+						<tbody>
+							<tr>
+								<td>Artist</td>
+								<td>Votes</td>
+								{% for artist in relationships %}
+									<tr>
+										<td>{{ artist[0] }}</td>
+										<td>{{ artist[2] }}</td>
+								{% endfor %}
+						</tbody>
+					</table>
+				</div>
+			{% endif %}
 		</div>
 	{% endblock %}

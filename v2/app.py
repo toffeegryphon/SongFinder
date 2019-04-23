@@ -214,9 +214,59 @@ def create_app():
 					similar_sounding = cache.get('similar_sounding')
 					)
 
-		else:
-			print(request)
-			print(request.query_string)
+			elif request.form.get('form_name') == 'sort':
+				sort_order = request.form.get('sort_order')
+				print(sort_order)
+				artist_id = request.form.get('artist_id')
+
+				if sort_order == 'sort_votes':
+					sort_method = songs.Sort.VOTES
+				else:
+					sort_method = songs.Sort.ALPHABETICAL
+
+				artist = songs.sortRecordings(artist_id, songs.ArtistInput.ARTIST_ID, sort_method)
+				cache.set('main_artist', artist)
+
+				relationships = []
+				for relationship in artist.get('relationships'):
+					print("Relationship: ", relationship)
+					##TODO Fix Somehow this is None
+					print(artist.get('relationships').get(relationship))
+					relationships.append([songs.getArtistName(relationship), relationship, artist.get('relationships').get(relationship)])
+				print(relationships)
+
+				similar_sounding = cache.get('similar_sounding')
+				if similar_sounding == None:
+					similar_sounding = songs.getArtistId(artist.get('artistName'), 4)
+					print(similar_sounding)
+					cache.set('similar_sounding', similar_sounding)
+
+				recommend_form = RecommendForm(
+					form_name = 'recommend', 
+					main_artist = artist.get('artistName')
+					)
+				recommend_form.form_name.data = 'recommend'
+
+				feedback_form = FeedbackForm(form_name = 'feedback')
+				print(feedback_form.form_name)
+				feedback_form.form_name.data = 'feedback'
+				print(feedback_form.form_name)
+
+				return render_template(
+					'artist.html', 
+					artist_name = artist.get('artistName'), 
+					artist_id = artist_id,  
+					feedback_form = feedback_form, 
+					search_form = SearchForm(), 
+					recommend_form = recommend_form, 
+					recordings = artist.get('recordings'), 
+					relationships = relationships, 
+					similar_sounding = similar_sounding
+				)
+
+			else:
+				print(request)
+				print(request.query_string)
 
 		return redirect(url_for('base'))
 
@@ -261,6 +311,6 @@ def create_app():
 			recordings = recordings, 
 			relationships = relationships, 
 			similar_sounding = similar_sounding
-			)
+		)
 
 	return app
