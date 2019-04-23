@@ -1,4 +1,5 @@
 import os, urllib.request, json, csv
+from datetime import datetime
 from unidecode import unidecode
 from operator import itemgetter
 from enum import Enum
@@ -351,30 +352,50 @@ def sortRecordings(artistRep, artistInput, sortOrder = Sort.ALPHABETICAL):
 SPOTIFY_BASE = 'https://spotifycharts.com/'
 SPOTIFY_DEFAULT = '%s/regional/global/daily/latest/download' % SPOTIFY_BASE
 
-def getCharts():
-    opener = urllib.request.build_opener()
-    opener.addheaders = [('User-Agent', 'Mozilla/5.0')]
-    urllib.request.install_opener(opener)
+def getCharts(numberOfResults=10, forceUpdate=False):
 
-    requestCharts = urllib.request.urlretrieve(SPOTIFY_DEFAULT, 'charts.csv')
+    currentTime = datetime.now()
+    try:
+        with open('charts_time.txt', 'r') as file:
+            updateTime = datetime.strptime(file.readline(), '%Y-%m-%d %H:%M:%S.%f')
+    except Exception:
+        updateTime = datetime.strptime('0001-01-01 01:01:01.1', '%Y-%m-%d %H:%M:%S.%f')
+    deltaTime = currentTime - updateTime
+    print('Current Time: ' + str(currentTime))
+    print('Update Time: ' + str(updateTime))
+    print('Delta Time: ' + str(deltaTime))
 
-    #TODO Most likely can be removed
-    with open('charts.csv', 'r', encoding="utf8") as file, open('charts_clean.csv', 'w') as output:
-        next(file)
-        for line in file:
-            output.write(line)
+    if deltaTime.days >= 3 or forceUpdate == True:
+        print('Getting new charts')
+        opener = urllib.request.build_opener()
+        opener.addheaders = [('User-Agent', 'Mozilla/5.0')]
+        urllib.request.install_opener(opener)
+
+        requestCharts = urllib.request.urlretrieve(SPOTIFY_DEFAULT, 'charts.csv')
+
+        #TODO Most likely can be removed
+        with open('charts.csv', 'r', encoding="utf8") as file, open('charts_clean.csv', 'w') as output:
+            next(file)
+            i = 0
+            for line in file:
+                output.write(line)
+                if i >= numberOfResults:
+                    break
+                i += 1
+
+        with open('charts_time.txt', 'w') as file:
+            file.write(str(datetime.now()))
+
+        ##Reset header, if not musicbrainz calls do not work
+        opener = urllib.request.build_opener()
+        opener.addheaders = [('User-Agent', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0')]
+        urllib.request.install_opener(opener)
 
     charts = []
     with open('charts_clean.csv', 'r') as file:
         chartsCSV = csv.DictReader(file)
-        line = 1
         for row in chartsCSV:
             charts.append({'position' : row['Position'], 'trackName' : row['Track Name'], 'artist' : row['Artist'], 'streams' : row['Streams'], 'url' : row['URL']})
     #print(charts)
-
-    ##Reset header, if not musicbrainz calls do not work
-    opener = urllib.request.build_opener()
-    opener.addheaders = [('User-Agent', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0')]
-    urllib.request.install_opener(opener)
 
     return charts
